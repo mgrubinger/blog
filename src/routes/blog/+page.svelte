@@ -2,6 +2,7 @@
 	import { browser } from '$app/environment';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
+	import BlogItemsList from '$components/BlogItemsList.svelte';
 
 	import { SITE_TITLE, POST_CATEGORIES } from '$lib/siteConfig';
 
@@ -17,40 +18,19 @@
 </script>
 
 <svelte:head>
-	<title>{SITE_TITLE} Blog Index</title>
+	<title>{SITE_TITLE} Blog</title>
 	<meta name="description" content={`Latest ${SITE_TITLE} posts`} />
 </svelte:head>
 
 <section>
-	<div>
-		<h1>Blog</h1>
-	</div>
+	<h1>Blog</h1>
 
-	{#if items.length}
-		<ul class="nolist blog-items">
-			{#each items as item}
-				<li>
-					<IndexCard
-						href="/blog/{item.slug}"
-						title={item.title}
-						stringData={new Date(item.date).toISOString().slice(0, 10)}
-						ghMetadata={item.ghMetadata}
-						{item}
-					>
-						{item.frontmatter.short || item.description}
-					</IndexCard>
-				</li>
-			{/each}
-		</ul>
-	{:else}
-		<div>No blogposts found!</div>
-	{/if}
+  <BlogItemsList {items} />
+
 </section>
 
-<style>
-.blog-items {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-8);
-}
+<style lang="scss">
+  h1 {
+    margin-bottom: var(--size-4);
+  }
 </style>

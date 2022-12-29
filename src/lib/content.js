@@ -225,8 +225,11 @@ function parseIssue(issue) {
 	if (data.tags) tags = Array.isArray(data.tags) ? data.tags : [data.tags];
 	tags = tags.map((tag) => tag.toLowerCase());
 
+  /** @type {import('./types').ContentItemType} */
+  let type = issue.labels.map(t => t.name.toLowerCase()).includes('project') ? 'project' : 'blog';
+
 	return {
-		type: issue.labels.map(t => t.name.toLowerCase()).includes('project') ? 'project' : 'blog', // futureproof in case you want to add other types of content
+		type, // futureproof in case you want to add other types of content
 		content,
 		frontmatter: data,
 		title,
@@ -234,7 +237,7 @@ function parseIssue(issue) {
 		description,
 		category: data.category?.toLowerCase() || 'blog',
 		categoryOriginalCasing: data.category,
-		tags,
+		tags: issue.labels.filter(l => !['Published'].includes(l.name)).map(l => l.name),
 		image: data.image ?? data.cover_image,
 		canonical: data.canonical, // for canonical URLs of something published elsewhere
 		slug: slug.toString().toLowerCase(),

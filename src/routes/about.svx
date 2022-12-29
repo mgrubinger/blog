@@ -8,14 +8,18 @@
 		height={imgSize}
 		src="https://avatars.githubusercontent.com/u/465547?v=4"
 	/>
-	<h1 style="margin-bottom: 0;">Hi, I'm Martin Grubinger</h1>
+    <h1 style="margin-bottom: 0;">Hi, I'm Martin Grubinger,<br>builder of web-things.</h1>
 </div>
 
-    I am a Lead Frontend Developer at [Geizhals.at](https://geizhals.at/) (since February 2020). From
-    2013–2020 I was a Technology Director at [Fluxguide](https://fluxguide.com/) in Vienna. I teach a
-    course on frontend web development at [University of Applied Sciences St.
-    Pölten](https://www.fhstp.ac.at/de).
+  **Welcome to my website, my blog, my _digital garden_.**
 
+  This is where I write about [what I've learned](/blog) and show off [projects](/projects) I worked on.
+  This is also where I want to be found on the web, my public _business card_ in a way. I aim to _cultivate_ this site as is grows, write more, improve it, experiment and try out new things.
+
+    Currently I am a Lead Front-end Developer at [Geizhals.at](https://geizhals.at/) (since February 2020). From
+    2013–2020 I was a Technology Director at [Fluxguide](https://fluxguide.com/) in Vienna. I also tought a
+    course on front-end web development at [University of Applied Sciences St.
+    Pölten](https://www.fhstp.ac.at/de) from 2019–2021.
 
     From 2007-2012 I studied Digital Media Technologies at St. Pölten University of Applied Sciences.
     In 2010 I had the amazing opportunity to do an internship at [Second Story Interactive
@@ -27,7 +31,7 @@
     more about my adventure on my [blog](http://transasia.mgrubinger.at/) (German only) or [buy my
     book](http://transasia.mgrubinger.at/transasia-das-buch/).
 
-    🤘 Married 💍, dad^2.
+    Married 💍, dad×2.
 
     Trivia: I am frequently mistaken
     for [Martin Grubinger](https://www.martingrubinger.com/) (I don't blame you).
@@ -37,7 +41,7 @@
 		display: flex;
 		gap: var(--size-4);
 		align-items: center;
-		margin-bottom: var(--size-4);
+		margin: var(--size-6) 0;
     --radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;
 	}
 	.mg {

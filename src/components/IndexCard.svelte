@@ -21,17 +21,26 @@
 	</p>
 	<div class="meta-and-tags flex">
 		<p class="date">{stringData}</p>
-		<span class="sep">/</span>
 		<!-- {#if item?.readingTime}
-				<p>{item?.readingTime}</p>
+      <p>{item?.readingTime}</p>
 			{/if} -->
 
-		<ul class="tags nolist">
-			<span class="tag">{item?.categoryOriginalCasing || 'Blog'}</span>
-		</ul>
+		{#if item?.tags && item?.tags.length > 0}
+			<span class="sep">/</span>
+			<ul class="tags nolist">
+				{#each item?.tags as tag}
+					<li class="tag">
+						{tag || 'Blog'}
+					</li>
+				{/each}
+			</ul>
+		{/if}
+
 		{#if ghMetadata && ghMetadata.reactions.total_count}
 			<span class="sep">/</span>
-			<p class="reactions">{ghMetadata.reactions.total_count} ♥</p>
+			<p class="reactions">
+				{ghMetadata.reactions.total_count} reaction{#if ghMetadata.reactions.total_count > 1}s{/if}
+			</p>
 		{/if}
 	</div>
 </div>
@@ -46,25 +55,9 @@
 		margin: 0;
 		margin-bottom: var(--size-1);
 	}
-	.meta-and-tags {
-		gap: var(--size-3);
-		align-items: center;
-		font-size: var(--font-size-09);
-		opacity: 0.7;
-	}
 	.date {
 	}
 	.short {
 		font-size: var(--font-size-09);
 	}
-	.tag {
-		border-radius: 4px;
-		font-size: 80%;
-		background-color: var(--primary-light);
-		padding: var(--size-1) var(--size-2);
-	}
-
-  .sep {
-    opacity: 0.5;
-  }
 </style>

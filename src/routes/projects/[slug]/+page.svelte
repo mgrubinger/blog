@@ -44,7 +44,14 @@
 			<a href="#reactions">
 				<span>{json.ghMetadata.reactions.total_count} reactions</span>
 			</a>
+			{#if json.frontmatter.tools}
+				<span class="sep">/</span>
+				Tools: {json.frontmatter.tools}
+			{/if}
+
+			{#if json.frontmatter.tasks}<span class="sep">/</span> Tasks: {json.frontmatter.tasks}{/if}
 		</p>
+		<p />
 	</div>
 
 	<div id="content">
@@ -70,5 +77,4 @@
 </div>
 
 <style>
-
 </style>

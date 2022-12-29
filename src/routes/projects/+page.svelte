@@ -5,7 +5,7 @@
 
 	import { SITE_TITLE, POST_CATEGORIES } from '$lib/siteConfig';
 
-	import IndexCard from '../../components/IndexCard.svelte';
+	import ProjectCard from '../../components/ProjectCard.svelte';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -23,23 +23,37 @@
 <section>
 	<h1>Projects</h1>
 
+  <p>Some of the projects I have worked on in the past.</p>
+
 	{#if items.length}
-		<ul>
+		<ul class="nolist project-list">
 			{#each items as item}
 				<li>
 					<!-- <code>{item.data.date}</code> -->
-					<IndexCard
-						href={item.slug}
+					<ProjectCard
+						href="/projects/{item.slug}"
 						title={item.title}
-						stringData={new Date(item.date).toISOString().slice(0, 10)}
+						stringData={new Date(item.date).getFullYear()}
 						ghMetadata={item.ghMetadata}
 						{item}
 					>
 						{item.frontmatter.short || item.description}
-					</IndexCard>
+					</ProjectCard>
 				</li>
 			{/each}
 		</ul>
-		<div>No blogposts found!</div>
 	{/if}
 </section>
+
+<style lang="scss">
+	.project-list {
+		display: grid;
+		gap: var(--size-4);
+		grid-template-columns: repeat(2, 1fr);
+    margin-top: var(--size-8);
+
+		@media screen and (max-width: 620px) {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

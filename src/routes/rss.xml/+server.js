@@ -11,8 +11,10 @@ export async function GET({ setHeaders }) {
 		feed_url: SITE_URL + '/api/rss.xml'
 	});
 
-	const allBlogs = await listContent();
+	let allBlogs = await listContent();
+  // let allBlogs = allBlogsAndProjects.find(item => item.type === "blog");
 	allBlogs.forEach((post) => {
+    if(post.type === 'project') return; // do not publish projects to RSS
 		feed.item({
 			title: post.title,
 			url: SITE_URL + `/${post.slug}`,

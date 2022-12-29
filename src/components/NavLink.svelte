@@ -12,7 +12,7 @@
 		color: black;
 		position: relative;
 		text-decoration: none;
-		font-variation-settings: 'wght' 550;
+    font-weight: 800;
 
 		&:hover,
 		&.active {

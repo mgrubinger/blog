@@ -9,6 +9,13 @@
 		MY_TWITTER_HANDLE
 	} from '$lib/siteConfig';
 	export const prerender = true; // index page is most visited, lets prerender
+	import About from './about.svx';
+	import IndexCard from '$components/IndexCard.svelte';
+	import BlogItemsList from '$components/BlogItemsList.svelte';
+
+	/** @type {import('./$types').PageData} */
+	export let data;
+	let items = data.items;
 </script>
 
 <svelte:head>
@@ -28,20 +35,21 @@
 	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
 </svelte:head>
 
-<a
+<About />
 
-	href="/blog"
-	>See latest posts<svg
-		xmlns="http://www.w3.org/2000/svg"
-		fill="none"
-		viewBox="0 0 24 24"
+<h2 class="blog">Latest blog posts</h2>
 
-		><path
-			stroke="currentColor"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			stroke-width="2"
-			d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
-		/></svg
-	></a
->
+<BlogItemsList {items} />
+
+<div class="more">
+	<a href="/blog" class="latest-posts-link">See more blog posts</a>
+</div>
+
+<style lang="scss">
+	.blog {
+		margin-bottom: var(--size-4);
+	}
+	.more {
+		margin-top: var(--size-4);
+	}
+</style>

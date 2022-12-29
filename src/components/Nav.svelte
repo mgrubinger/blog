@@ -9,16 +9,13 @@
 	<Logo />
 	<ul>
 		<li>
-			<NavLink href="/">Home</NavLink>
+			<NavLink href="/">home</NavLink>
 		</li>
 		<li>
-			<NavLink href="/blog">Blog</NavLink>
+			<NavLink href="/blog">blog</NavLink>
 		</li>
 		<li>
-			<NavLink href="/projects">Projects</NavLink>
-		</li>
-		<li>
-			<NavLink href="/about">About</NavLink>
+			<NavLink href="/projects">projects</NavLink>
 		</li>
 	</ul>
 	<!-- <div>
