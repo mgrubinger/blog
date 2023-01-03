@@ -1,4 +1,6 @@
-<script>let imgSize = 140;</script>
+<script>let imgSize = 140;
+  import {MY_EMAIL} from '../lib/siteConfig.js';
+</script>
 
 <div class="about-header">
 	<img
@@ -11,30 +13,34 @@
     <h1 style="margin-bottom: 0;">Hi, I'm Martin Grubinger,<br>builder of web-things.</h1>
 </div>
 
-  Welcome to my website, my blog, my _digital garden_.
+Welcome to my website, my blog, my _digital garden_.
 
-  This is where I write about [what I've learned](/blog) and show off [projects](/projects) I worked on.
-  This is also where I want to be found on the web, my public _business card_ in a way. I aim to _cultivate_ this site as is grows, write more, improve it, experiment and try out new things.
+This is where I write about [what I've learned](/blog) and show off [projects](/projects) I worked on.
+This is also where I want to be found on the web, my public _business card_ in a way. I aim to _cultivate_ this site as is grows, write more, improve it, experiment and try out new things.
 
-    Currently I am a Lead Front-end Developer at [Geizhals.at](https://geizhals.at/) (since February 2020). From
-    2013–2020 I was a Technology Director at [Fluxguide](https://fluxguide.com/) in Vienna. I also tought a
-    course on front-end web development at [University of Applied Sciences St.
-    Pölten](https://www.fhstp.ac.at/de) from 2019–2021.
+Currently I am a Lead Front-end Developer at [Geizhals.at](https://geizhals.at/) (since February 2020). From
+2013–2020 I was a Technology Director at [Fluxguide](https://fluxguide.com/) in Vienna. I also tought a
+course on front-end web development at [University of Applied Sciences St.
+Pölten](https://www.fhstp.ac.at/de) from 2019–2021.
 
-    From 2007-2012 I studied Digital Media Technologies at St. Pölten University of Applied Sciences.
-    In 2010 I had the amazing opportunity to do an internship at [Second Story Interactive
-    Studios](https://www.razorfish.com/second-story/) in Portland, Oregon. Besides my main job I love
-    working on side projects to try out new tools. Many of those projects you can see in the
-    [Projects](/projects) section.
+From 2007-2012 I studied Digital Media Technologies at St. Pölten University of Applied Sciences.
+In 2010 I had the amazing opportunity to do an internship at [Second Story Interactive
+Studios](https://www.razorfish.com/second-story/) in Portland, Oregon. Besides my main job I love
+working on side projects to try out new tools. Many of those projects you can see in the
+[Projects](/projects) section.
 
-    In 2015/16 I traveled from Vienna, Austria to Kuala Lumpur, Malaysia by motorcycle. You can read
-    more about my adventure on my [blog](http://transasia.mgrubinger.at/) (German only) or [buy my
-    book](http://transasia.mgrubinger.at/transasia-das-buch/).
+In 2015/16 I traveled from Vienna, Austria to Kuala Lumpur, Malaysia by motorcycle. You can read
+more about my adventure on my [blog](http://transasia.mgrubinger.at/) (German only) or [buy my
+book](http://transasia.mgrubinger.at/transasia-das-buch/).
 
-    Married 💍, dad of 2.
+Married 💍, dad of 2.
 
-    Trivia: I am frequently mistaken
-    for [Martin Grubinger](https://www.martingrubinger.com/) (I don't blame you).
+Trivia: I am frequently mistaken
+for [Martin Grubinger](https://www.martingrubinger.com/) (I don't blame you).
+
+### Contact
+
+Shoot me an email at <a href="mailto:{MY_EMAIL}">{MY_EMAIL}</a>
 
 <style lang="scss">
 	.about-header {
