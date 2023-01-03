@@ -6,9 +6,9 @@
 	}
 </script>
 
-<div class="grooovinger" on:mouseenter={mouseEnter}>
+<a href="/" class="grooovinger" on:mouseenter={mouseEnter}>
 	gr{#each Array(os) as o}o{/each}vinger
-</div>
+</a>
 
 <style>
 	.grooovinger {
