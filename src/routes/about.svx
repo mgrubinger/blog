@@ -31,18 +31,27 @@
     more about my adventure on my [blog](http://transasia.mgrubinger.at/) (German only) or [buy my
     book](http://transasia.mgrubinger.at/transasia-das-buch/).
 
-    Married 💍, dad×2.
+    Married 💍, dad of 2.
 
     Trivia: I am frequently mistaken
     for [Martin Grubinger](https://www.martingrubinger.com/) (I don't blame you).
 
-<style>
+<style lang="scss">
 	.about-header {
 		display: flex;
 		gap: var(--size-4);
 		align-items: center;
 		margin: var(--size-6) 0;
     --radius-blob-4: 63% 37% 37% 63% / 43% 37% 63% 57%;
+
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        margin-top: 0;
+      }
+    }
 	}
 	.mg {
 		border-radius: var(--radius-blob-4);

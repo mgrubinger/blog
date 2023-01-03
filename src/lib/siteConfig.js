@@ -8,7 +8,7 @@ export const DEFAULT_OG_IMAGE =
 export const MY_TWITTER_HANDLE = 'mgrubinger';
 export const MY_MASTODON_HANDLE = '@grooovinger@mastodon.social';
 export const MY_MASTODON_URL = 'https://mastodon.social/@grooovinger';
-export const MY_YOUTUBE = 'https://youtube.com/swyxTV';
+export const MY_EMAIL = 'hello@mgrubinger.at';
 export const POST_CATEGORIES = ['Blog', 'TIL']; // Other categories you can consider adding: Talks, Tutorials, Snippets, Podcasts, Notes...
 export const GH_PUBLISHED_TAGS = ['Published'];
 

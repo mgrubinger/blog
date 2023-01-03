@@ -3,7 +3,7 @@
 	import { MY_TWITTER_HANDLE, REPO_URL, SITE_TITLE } from '$lib/siteConfig';
 	import '../global.scss';
   import "@fontsource/inter/400.css"
-  import "@fontsource/inter/800.css"
+  import "@fontsource/inter/700.css"
 	import Footer from '$components/Footer.svelte';
 </script>
 

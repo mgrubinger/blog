@@ -2,9 +2,9 @@
 	import {
 		MY_MASTODON_HANDLE,
 		MY_MASTODON_URL,
-		MY_TWITTER_HANDLE,
 		REPO_URL,
-		SITE_TITLE
+		SITE_TITLE,
+    MY_EMAIL
 	} from '$lib/siteConfig';
 
 	let date = new Date();
@@ -19,27 +19,20 @@
 			<li><a href="/projects">Projects</a></li>
 			<li><a href="/rss.xml">RSS</a></li>
 		</ul>
-		<ul class="nolist">
+		<ul class="nolist" data-sveltekit-preload-data="off">
 			<li>
-				<a class="" target="_blank" rel="noopener noreferrer" href={MY_MASTODON_URL}>Mastodon</a>
+				<a class="" target="_blank" rel="noopener noreferrer" href="mailto{MY_EMAIL}">{MY_EMAIL}</a>
 			</li>
 			<li>
-				<a
-					class=""
-					target="_blank"
-					rel="noopener noreferrer"
-					href={'https://twitter.com/intent/follow?screen_name=' + MY_TWITTER_HANDLE}
-				>
-					Twitter
-				</a>
+				<a class="" target="_blank" rel="noopener noreferrer" href={MY_MASTODON_URL}>Mastodon</a>
 			</li>
 			<li><a href={REPO_URL}>GitHub</a></li>
 		</ul>
 	</div>
 	<p class="credits">
+		<br />the year is: {year}<br/>
 		Made with <a href="https://kit.svelte.dev/">SvelteKit</a>. Based on
 		<a href="https://swyxkit.netlify.app/">swyxkit.</a>
-		<br />{year}
 	</p>
 </footer>
 
