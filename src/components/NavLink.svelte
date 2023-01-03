@@ -15,6 +15,7 @@
     font-weight: 800;
 
 		&:hover,
+    &:focus,
 		&.active {
 			color: var(--primary);
 		}

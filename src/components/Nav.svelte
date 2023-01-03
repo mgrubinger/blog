@@ -57,7 +57,7 @@
 	</div> -->
 </nav>
 
-<style>
+<style lang="scss">
 	nav {
     display: flex;
     align-items: baseline;
@@ -67,13 +67,21 @@
   }
 	.skip-nav {
 		position: absolute;
-		left: -25%;
-		top: -2rem;
-		--tw-translate-y: -3rem;
+		left: -1px;
+		top: -1px;
+    color: #000;
+    font-weight: bold;
+		transform: translate3d(0, -100%, 0);
 		padding: 0.75rem 1rem;
 		transition-property: transform;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 0.2s;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+
+    &:focus {
+      transform: translate3d(0,0,0);
+    }
 	}
 	ul {
 		list-style: none;

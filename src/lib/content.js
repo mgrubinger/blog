@@ -71,7 +71,7 @@ export async function listContent() {
 	let url =
 		`https://api.github.com/repos/${GH_USER_REPO}/issues?` +
 		new URLSearchParams({
-			state: 'all',
+			state: 'open',
 			labels: GH_PUBLISHED_TAGS.toString(),
 			per_page: '100',
 		});

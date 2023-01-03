@@ -11,7 +11,7 @@
     <h1 style="margin-bottom: 0;">Hi, I'm Martin Grubinger,<br>builder of web-things.</h1>
 </div>
 
-  **Welcome to my website, my blog, my _digital garden_.**
+  Welcome to my website, my blog, my _digital garden_.
 
   This is where I write about [what I've learned](/blog) and show off [projects](/projects) I worked on.
   This is also where I want to be found on the web, my public _business card_ in a way. I aim to _cultivate_ this site as is grows, write more, improve it, experiment and try out new things.

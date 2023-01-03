@@ -18,7 +18,7 @@
 
 <div id="layout">
 	<Nav />
-	<main>
+	<main id="skip">
 		<slot />
 	</main>
 </div>
