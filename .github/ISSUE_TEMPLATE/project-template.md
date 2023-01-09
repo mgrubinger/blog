@@ -14,5 +14,7 @@ date: "2023-01-01"
 type: ""
 tools: ""
 short: ""
-cover:  
+cover: ""
 ---
+
+This is the text content
