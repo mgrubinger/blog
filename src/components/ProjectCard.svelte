@@ -52,13 +52,15 @@
     transform: translate3d(0, 0, 0);
     transition: all 80ms ease-in-out;
     box-shadow: 0 0 30px -25px #000;
+    outline: 7px solid transparent;
 
 		> * + * {
 			margin-top: var(--size-1);
 		}
 
     &:hover {
-      box-shadow: 0 0 60px -25px #000;
+      box-shadow: 5px 5px 50px -15px #000;
+      outline-color: #fff;
     }
 	}
 
