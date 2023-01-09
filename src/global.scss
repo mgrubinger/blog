@@ -62,7 +62,7 @@ h4 {
 	font-weight: 800;
 }
 
-p + p {
+p + p, ul + p {
 	margin-top: var(--size-4);
 }
 

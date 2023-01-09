@@ -1,5 +1,5 @@
 <script>
-	import { MY_TWITTER_HANDLE, SITE_URL } from '$lib/siteConfig';
+	import { MY_TWITTER_HANDLE, SITE_TITLE, SITE_URL } from '$lib/siteConfig';
 	import Comments from '$components/Comments.svelte';
 
 	import 'prism-themes/themes/prism-one-light.min.css';
@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>{json.title}</title>
+	<title>{json.title} | {SITE_TITLE}</title>
 	<meta name="description" content="swyxkit blog" />
 
 	<link rel="canonical" href={canonical} />
