@@ -4,7 +4,7 @@ export const GH_USER_REPO = 'mgrubinger/blog'; // used for pulling github issues
 export const SITE_TITLE = 'grooovinger';
 export const SITE_DESCRIPTION = "Hi, I'm Martin Grubinger, builder of web-things.";
 export const DEFAULT_OG_IMAGE =
-	{SITE_URL} + '/ogimage-1.png';
+	'https://grooovinger.com/ogimage-1.png';
 export const MY_TWITTER_HANDLE = 'mgrubinger';
 export const MY_MASTODON_HANDLE = '@grooovinger@mastodon.social';
 export const MY_MASTODON_URL = 'https://mastodon.social/@grooovinger';
