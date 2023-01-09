@@ -2,7 +2,7 @@
 name: Project template
 about: For project issues
 title: ''
-labels: ''
+labels: Project, Published
 assignees: ''
 
 ---
