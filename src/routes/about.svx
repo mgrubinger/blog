@@ -1,5 +1,6 @@
 <script>let imgSize = 140;
   import {MY_EMAIL, MY_MASTODON_URL} from '../lib/siteConfig.js';
+
 </script>
 
 <div class="about-header">

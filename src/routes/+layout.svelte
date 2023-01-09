@@ -5,8 +5,6 @@
   import "@fontsource/inter/400.css"
   import "@fontsource/inter/700.css"
 	import Footer from '$components/Footer.svelte';
-	import { page } from '$app/stores';
-
 </script>
 
 <svelte:head>
@@ -18,7 +16,7 @@
 	/>
 </svelte:head>
 
-<div id="layout" data-route-id="{$page.routeId}">
+<div id="layout">
 	<Nav />
 	<main id="skip">
 		<slot />

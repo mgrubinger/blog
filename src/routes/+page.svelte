@@ -8,7 +8,7 @@
 		DEFAULT_OG_IMAGE,
 		MY_TWITTER_HANDLE
 	} from '$lib/siteConfig';
-	export const prerender = true; // index page is most visited, lets prerender
+	// export const prerender = true; // index page is most visited, lets prerender
 	import About from './about.svx';
 	import IndexCard from '$components/IndexCard.svelte';
 	import BlogItemsList from '$components/BlogItemsList.svelte';
