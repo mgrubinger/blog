@@ -17,6 +17,7 @@
 			<li><a href="/">Home</a></li>
 			<li><a href="/blog">Blog</a></li>
 			<li><a href="/projects">Projects</a></li>
+			<li><a href="/imprint">Imprint / Privacy Statement</a></li>
 			<li><a href="/rss.xml">RSS</a></li>
 		</ul>
 		<ul class="nolist" data-sveltekit-preload-data="off">
@@ -30,7 +31,7 @@
 		</ul>
 	</div>
 	<p class="credits">
-		<br />the year is: {year}<br/>
+		The year is {year}<br/>
 		Made with <a href="https://kit.svelte.dev/">SvelteKit</a>. Based on
 		<a href="https://swyxkit.netlify.app/">swyxkit.</a>
 	</p>
@@ -43,8 +44,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: var(--gray-7);
 		color: #fff;
+		background-color: var(--primary-dark);
 		padding: var(--size-4);
 		padding-bottom: var(--size-7);
 		gap: var(--size-4);
@@ -53,7 +54,7 @@
 			color: currentColor;
 
 			&:hover {
-				color: var(--primary-light);
+				color: hotpink;
 			}
 		}
 	}
