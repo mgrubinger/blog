@@ -12,9 +12,9 @@
 	--font-size-3: 1.3rem;
 	--font-size-4: 1.4rem;
 	--font-size-5: 1.5rem;
-	--font-size-6: 2.3rem;
+	--font-size-6: 2rem;
 	--primary: hsl(181deg 100% 22%);
-	--primary-dark: hsl(181deg 100% 17%);
+	--primary-dark: hsl(181deg 100% 12%);
 	--primary-light: rgb(218 241 244);
 	--color-blockquote-bg: rgb(212 237 240);
 	--dark: #333;
@@ -83,6 +83,11 @@ a {
 	&.ntd {
 		text-decoration: none;
 	}
+
+  &[href^="#"] {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 code[class*='language-'],
