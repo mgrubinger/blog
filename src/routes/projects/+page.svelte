@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>{SITE_TITLE} Projects</title>
+	<title>Projects | {SITE_TITLE}</title>
 	<meta name="description" content={`${SITE_TITLE} projects`} />
 </svelte:head>
 
