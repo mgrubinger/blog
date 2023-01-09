@@ -1,5 +1,5 @@
 <script>let imgSize = 140;
-  import {MY_EMAIL} from '../lib/siteConfig.js';
+  import {MY_EMAIL, MY_MASTODON_URL} from '../lib/siteConfig.js';
 </script>
 
 <div class="about-header">
@@ -13,7 +13,7 @@
     <h1 style="margin-bottom: 0;">Hi, I'm Martin Grubinger,<br>builder of web-things.</h1>
 </div>
 
-Welcome to my website, my blog, my _digital garden_.
+Welcome to my website, my blog, my _digital garden_ 🪴.
 
 This is where I write about [what I've learned](/blog) and show off [projects](/projects) I worked on.
 This is also where I want to be found on the web, my public _business card_ in a way. I aim to _cultivate_ this site as is grows, write more, improve it, experiment and try out new things.
@@ -40,7 +40,7 @@ for [Martin Grubinger](https://www.martingrubinger.com/) (I don't blame you).
 
 ### Contact
 
-Shoot me an email at <a href="mailto:{MY_EMAIL}">{MY_EMAIL}</a>
+Find me on <a href="{MY_MASTODON_URL}" rel="noopener">Mastodon</a> or drop me an email at <a href="mailto:{MY_EMAIL}">{MY_EMAIL}</a>
 
 <style lang="scss">
 	.about-header {
