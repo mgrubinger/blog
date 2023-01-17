@@ -25,12 +25,18 @@
 <section>
 	<h1>Blog</h1>
 
+  <p>A collection of notes, blogposts and TIL (<i>Today I Learned</i>) type of posts. Some long, some not so long.</p>
+
   <BlogItemsList {items} />
 
 </section>
 
 <style lang="scss">
   h1 {
+    margin-bottom: var(--size-4);
+  }
+
+  p {
     margin-bottom: var(--size-4);
   }
 </style>

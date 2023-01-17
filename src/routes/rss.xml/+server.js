@@ -17,7 +17,7 @@ export async function GET({ setHeaders }) {
     if(post.type === 'project') return; // do not publish projects to RSS
 		feed.item({
 			title: post.title,
-			url: SITE_URL + `/${post.slug}`,
+			url: SITE_URL + `/blog/${post.slug}`,
 			date: post.date,
 			description: post.description
 		});
