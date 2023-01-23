@@ -1,8 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/redirtest/:path*",
-      "destination": "/blog/:path*",
+      "source": "/blog/:path*",
+      "destination": "/notes/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/blog",
+      "destination": "/notes",
       "permanent": false
     }
   ]
