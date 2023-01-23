@@ -27,11 +27,6 @@
 
 	{#if $page.status === 404}
 		<p>There is no post at the slug <code>{$page.url.pathname}</code>.</p>
-		<p>
-			<a href={'/blog/?filter=' + $page.url.pathname.slice(1)}
-				>Try searching for "{displayPathname($page.url.pathname.slice(1))}" here!</a
-			>
-		</p>
 		<p>If you believe this was a bug, please let me know!</p>
 	{:else}
 		<p>{message}</p>
