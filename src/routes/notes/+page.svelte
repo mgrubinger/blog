@@ -18,12 +18,12 @@
 </script>
 
 <svelte:head>
-	<title>Blog | {SITE_TITLE}</title>
+	<title>Notes | {SITE_TITLE}</title>
 	<meta name="description" content={`Latest ${SITE_TITLE} posts`} />
 </svelte:head>
 
 <section>
-	<h1>Blog</h1>
+	<h1>Notes</h1>
 
   <p>A collection of notes, blogposts and TIL (<i>Today I Learned</i>) type of posts. Some long, some not so long.</p>
 
