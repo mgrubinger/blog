@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/redirtest/:path*",
+      "destination": "/blog/:path*",
+      "permanent": false
+    }
+  ]
+}
