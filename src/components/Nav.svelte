@@ -12,7 +12,7 @@
 			<NavLink href="/">home</NavLink>
 		</li>
 		<li>
-			<NavLink href="/blog">blog</NavLink>
+			<NavLink href="/notes">notes</NavLink>
 		</li>
 		<li>
 			<NavLink href="/projects">projects</NavLink>
