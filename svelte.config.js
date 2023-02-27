@@ -45,7 +45,10 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-      edge: true
+      // edge: true,
+      isr: {
+        expiration: 60
+      }
 		})
 	}
 };
