@@ -49,7 +49,11 @@ const config = {
       isr: {
         expiration: 60
       }
-		})
+		}),
+    prerender: {
+      entries: ['/'],
+      crawl: false
+    }
 	}
 };
 

@@ -9,11 +9,13 @@ export async function load({ setHeaders, fetch }) {
 
 	/** @type {import('$lib/types').ContentItem[]} */
 	let items = await res.json();
-  items = items.filter(item => item.type === 'blog');
-  items = items.slice(0, 3);
+	items = items.filter((item) => item.type === 'blog');
+	items = items.slice(0, 3);
 
 	setHeaders({
 		'cache-control': 'public, max-age=60' // 1 minute
 	});
 	return { items };
 }
+
+// export const prerender = 'auto'; // index page is most visited, lets prerender

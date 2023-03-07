@@ -22,18 +22,18 @@
 		</ul>
 		<ul class="nolist" data-sveltekit-preload-data="off">
 			<li>
-				<a class="" target="_blank" rel="noopener noreferrer" href="mailto{MY_EMAIL}">{MY_EMAIL}</a>
+				<a target="_blank" rel="noopener noreferrer" href="mailto{MY_EMAIL}">{MY_EMAIL}</a>
 			</li>
 			<li>
-				<a class="" target="_blank" rel="noopener noreferrer" href={MY_MASTODON_URL}>Mastodon</a>
+				<a target="_blank" rel="me noopener noreferrer" href={MY_MASTODON_URL}>Mastodon</a>
 			</li>
-			<li><a href={REPO_URL}>GitHub</a></li>
+			<li><a rel="noopener noreferrer" href={REPO_URL}>GitHub</a></li>
 		</ul>
 	</div>
 	<p class="credits">
 		The year is {year}<br/>
-		Made with <a href="https://kit.svelte.dev/">SvelteKit</a>. Based on
-		<a href="https://swyxkit.netlify.app/">swyxkit.</a>
+		Made with <a rel="noopener noreferrer" href="https://kit.svelte.dev/">SvelteKit</a>. Based on
+		<a rel="noopener noreferrer" href="https://swyxkit.netlify.app/">swyxkit.</a>
 	</p>
 </footer>
 
