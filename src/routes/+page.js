@@ -18,4 +18,4 @@ export async function load({ setHeaders, fetch }) {
 	return { items };
 }
 
-// export const prerender = 'auto'; // index page is most visited, lets prerender
+
