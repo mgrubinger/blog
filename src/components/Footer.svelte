@@ -32,8 +32,7 @@
 	</div>
 	<p class="credits">
 		The year is {year}<br/>
-		Made with <a rel="noopener noreferrer" href="https://kit.svelte.dev/">SvelteKit</a>. Based on
-		<a rel="noopener noreferrer" href="https://swyxkit.netlify.app/">swyxkit.</a>
+		Made with <a rel="noopener noreferrer" href="https://kit.svelte.dev/">SvelteKit</a>
 	</p>
 </footer>
 

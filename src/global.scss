@@ -50,7 +50,7 @@ h2 {
 	font-size: var(--font-size-5);
 }
 h3 {
-	font-size: var(--font-size-4);
+	font-size: var(--font-size-1);
 }
 h1,
 h2,
@@ -156,11 +156,17 @@ article {
 	font-size: var(--font-size-08);
 }
 
+.tags {
+  display: flex;
+  gap: var(--size-2);
+}
 .tags .tag {
-	border-radius: 4px;
 	font-size: 90%;
-	background-color: var(--primary-light);
-	padding: var(--size-1) var(--size-2);
+
+  &::before {
+    content: '#';
+    margin-right: 1px;
+  }
 }
 .sep {
 	opacity: 0.5;
