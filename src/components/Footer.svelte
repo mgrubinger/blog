@@ -22,7 +22,7 @@
 		</ul>
 		<ul class="nolist" data-sveltekit-preload-data="off">
 			<li>
-				<a target="_blank" rel="noopener noreferrer" href="mailto{MY_EMAIL}">{MY_EMAIL}</a>
+				<a target="_blank" rel="noopener noreferrer" href="mailto:{MY_EMAIL}">{MY_EMAIL}</a>
 			</li>
 			<li>
 				<a target="_blank" rel="me noopener noreferrer" href={MY_MASTODON_URL}>Mastodon</a>
