@@ -9,7 +9,7 @@
 		{#each items as item}
 			<li>
 				<IndexCard
-					href="/blog/{item.slug}"
+					href="/notes/{item.slug}"
 					title={item.title}
 					stringData={new Date(item.date).toISOString().slice(0, 10)}
 					ghMetadata={item.ghMetadata}
