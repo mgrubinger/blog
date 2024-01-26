@@ -28,12 +28,6 @@
 		<meta property="og:image" content={json.image} />
 		<meta name="twitter:image" content={json.image} />
 	{/if}
-	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title="RSS Feed for grooovinger.com"
-		href="/rss.xml"
-	/>
 </svelte:head>
 
 <article>

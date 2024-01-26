@@ -15,12 +15,6 @@
 <svelte:head>
 	<title>Notes | {SITE_TITLE}</title>
 	<meta name="description" content={`Latest ${SITE_TITLE} posts`} />
-	<link
-		rel="alternate"
-		type="application/rss+xml"
-		title="RSS Feed for grooovinger.com"
-		href="/rss.xml"
-	/>
 </svelte:head>
 
 <section>
