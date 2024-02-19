@@ -88,10 +88,6 @@
     margin-bottom: var(--size-1);
 	}
 
-	.tag {
-		color: #000;
-	}
-
 	.project-image {
 		position: absolute;
 		width: 100%;

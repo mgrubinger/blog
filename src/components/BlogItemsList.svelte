@@ -2,6 +2,7 @@
 	import IndexCard from "./IndexCard.svelte";
 
   export let items;
+  console.log(items)
 </script>
 
 {#if items.length}
@@ -26,8 +27,11 @@
 
 <style>
   .blog-items {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: var(--size-4);
+    grid-template-columns: auto 1fr;
+  }
+  :global(.blog-items > li) {
+    display: contents !important;
   }
   </style>

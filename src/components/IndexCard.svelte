@@ -10,6 +10,7 @@
 	export let stringData = 'no date';
 </script>
 
+<time class="date">{stringData}</time>
 <div class="card">
 	<h4>
 		<a {href}>
@@ -20,13 +21,11 @@
 		<slot />
 	</p>
 	<div class="meta-and-tags flex">
-		<p class="date">{stringData}</p>
 		<!-- {#if item?.readingTime}
       <p>{item?.readingTime}</p>
 			{/if} -->
 
 		{#if item?.tags && item?.tags.length > 0}
-			<span class="sep">/</span>
 			<ul class="tags nolist">
 				{#each item?.tags as tag}
 					<li class="tag">
@@ -37,7 +36,7 @@
 		{/if}
 
 		{#if ghMetadata && ghMetadata.reactions.total_count}
-			<span class="sep">/</span>
+			{#if item?.tags.length > 0}<span class="sep">/</span>{/if}
 			<p class="reactions">
 				{ghMetadata.reactions.total_count} reaction{#if ghMetadata.reactions.total_count > 1}s{/if}
 			</p>
@@ -55,8 +54,11 @@
 		margin: 0;
 		margin-bottom: var(--size-1);
 	}
-	.date {
-	}
+	time {
+		font-size: var(--font-size-08);
+    margin-top: 2px;
+    color: var(--gray-7);
+  }
 	.short {
 		font-size: var(--font-size-09);
 	}
