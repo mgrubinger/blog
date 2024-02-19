@@ -45,8 +45,8 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
 					? null
 					: `
     <url>
-      <loc>${SITE_URL}/${post.slug}</loc>
-      <changefreq>daily</changefreq>
+    <loc>${SITE_URL}/${post.type === 'blog' ? 'notes' : post.type === 'project' ? 'projects' : post.type}/${post.slug}</loc>
+    <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
     `
