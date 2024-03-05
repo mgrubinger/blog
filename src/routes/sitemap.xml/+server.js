@@ -3,7 +3,7 @@ import { listContent } from '$lib/content';
 
 export async function GET() {
 	const posts = await listContent();
-	const pages = [`about`];
+	const pages = [`notes`, `projects`, `imprint`];
 	const body = sitemap(posts, pages);
 
 	return new Response(body, {
@@ -26,7 +26,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
     <url>
       <loc>${SITE_URL}</loc>
       <changefreq>daily</changefreq>
-      <priority>0.7</priority>
+      <priority>1.0</priority>
     </url>
     ${pages
 			.map(
@@ -34,7 +34,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
     <url>
       <loc>${SITE_URL}/${page}</loc>
       <changefreq>daily</changefreq>
-      <priority>0.7</priority>
+      <priority>0.9</priority>
     </url>
     `
 			)
@@ -47,7 +47,7 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
     <url>
     <loc>${SITE_URL}/${post.type === 'blog' ? 'notes' : post.type === 'project' ? 'projects' : post.type}/${post.slug}</loc>
     <changefreq>daily</changefreq>
-      <priority>0.7</priority>
+      <priority>0.5</priority>
     </url>
     `
 			)
