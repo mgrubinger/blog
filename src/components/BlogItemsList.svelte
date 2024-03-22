@@ -2,7 +2,6 @@
 	import IndexCard from "./IndexCard.svelte";
 
   export let items;
-  console.log(items)
 </script>
 
 {#if items.length}
