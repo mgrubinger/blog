@@ -63,7 +63,6 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/inter": "^4.5.14",
-		"@vercel/analytics": "^1.0.1",
 		"date-fns": "^2.29.2",
 		"node-fetch": "3.2.10",
 		"open-props": "^1.4.20",

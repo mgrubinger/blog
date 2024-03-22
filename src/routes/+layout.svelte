@@ -1,14 +1,12 @@
 <script>
 	import Nav from '../components/Nav.svelte';
-	import { MY_TWITTER_HANDLE, REPO_URL, SITE_TITLE } from '$lib/siteConfig';
+	import { SITE_TITLE } from '$lib/siteConfig';
 	import '../global.scss';
 	import '@fontsource/inter/400.css';
 	import '@fontsource/inter/700.css';
 	import Footer from '$components/Footer.svelte';
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
 
-	inject({ mode: dev ? 'development' : 'production' });
+	// analytics are at: https://grooovinger.goatcounter.com/
 </script>
 
 <svelte:head>
@@ -18,6 +16,10 @@
 		title={'RSS Feed for ' + SITE_TITLE}
 		href="/rss.xml"
 	/>
+	<script
+		data-goatcounter="https://grooovinger.goatcounter.com/count"
+		async
+		src="//gc.zgo.at/count.js"></script>
 </svelte:head>
 
 <div id="layout">
