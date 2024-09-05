@@ -18,9 +18,10 @@
 			<li><a href="/blog">Blog</a></li>
 			<li><a href="/projects">Projects</a></li>
 			<li><a href="/imprint">Imprint / Privacy Statement</a></li>
-			<li><a href="/rss.xml">RSS</a></li>
+
 		</ul>
 		<ul class="nolist" data-sveltekit-preload-data="off">
+      <li><a href="/rss.xml">RSS</a></li>
 			<li>
 				<a target="_blank" rel="noopener noreferrer" href="mailto:{MY_EMAIL}">{MY_EMAIL}</a>
 			</li>

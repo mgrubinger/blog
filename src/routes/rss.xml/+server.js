@@ -1,5 +1,5 @@
 import RSS from 'rss';
-import { SITE_TITLE, SITE_URL } from '$lib/siteConfig';
+import { SITE_TITLE, SITE_URL, SITE_AUTHOR } from '$lib/siteConfig';
 import { listContent } from '$lib/content';
 
 // Reference: https://github.com/sveltejs/kit/blob/master/examples/hn.svelte.dev/src/routes/%5Blist%5D/rss.js
@@ -8,18 +8,20 @@ export async function GET({ setHeaders }) {
 	const feed = new RSS({
 		title: SITE_TITLE + ' RSS Feed',
 		site_url: SITE_URL,
-		feed_url: SITE_URL + '/api/rss.xml',
+		feed_url: SITE_URL + '/rss.xml',
+    managingEditor: SITE_AUTHOR
 	});
 
 	let allBlogs = await listContent();
   // let allBlogs = allBlogsAndProjects.find(item => item.type === "blog");
 	allBlogs.forEach((post) => {
+    console.log(post)
     if(post.type === 'project') return; // do not publish projects to RSS
 		feed.item({
 			title: post.title,
 			url: SITE_URL + `/notes/${post.slug}`,
 			date: post.date,
-			description: post.description
+			description: post.content
 		});
 	});
 
@@ -27,7 +29,7 @@ export async function GET({ setHeaders }) {
 	return new Response(feed.xml({ indent: true }), {
 		headers: {
 			'Cache-Control': `max-age=0, s-maxage=${600}`, // 10 minutes
-			'Content-Type': 'application/rss+xml'
+			'Content-Type': 'application/rss+xml, charset=utf-8'
 		}
 	});
 }
