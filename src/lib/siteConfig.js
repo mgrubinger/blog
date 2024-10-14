@@ -6,7 +6,6 @@ export const SITE_DESCRIPTION = "Hi, I'm Martin Grubinger, builder of web-things
 export const SITE_AUTHOR = "Martin Grubinger";
 export const DEFAULT_OG_IMAGE =
 	'https://grooovinger.com/ogimage-1.png';
-export const MY_TWITTER_HANDLE = 'mgrubinger';
 export const MY_MASTODON_HANDLE = '@grooovinger@mastodon.social';
 export const MY_MASTODON_URL = 'https://mastodon.social/@grooovinger';
 export const MY_EMAIL = 'hello@mgrubinger.at';
