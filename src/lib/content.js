@@ -9,6 +9,7 @@ import {
 	GH_PUBLISHED_TAGS,
 	REPO_OWNER
 } from './siteConfig';
+import {GH_TOKEN} from '$env/static/private';
 import parse from 'parse-link-header';
 import rehypeStringify from 'rehype-stringify';
 import rehypeSlug from 'rehype-slug';
@@ -65,8 +66,8 @@ export async function listContent() {
 	let next = null;
 	let limit = 0; // just a failsafe against infinite loop - feel free to remove
 
-	const authheader = env.GH_TOKEN && {
-		Authorization: `token ${env.GH_TOKEN}`
+	const authheader = GH_TOKEN && {
+		Authorization: `token ${GH_TOKEN}`
 	};
 	let url =
 		`https://api.github.com/repos/${GH_USER_REPO}/issues?` +
@@ -115,7 +116,7 @@ export async function getContent(slug) {
 		console.log('loaded ' + allBlogposts.length + ' blogposts');
 		if (!allBlogposts.length)
 			throw new Error(
-				'failed to load blogposts for some reason. check token' + process.env.GH_TOKEN
+				'failed to load blogposts for some reason. check token' + process.GH_TOKEN
 			);
 	}
 	if (!allBlogposts.length) throw new Error('no blogposts');

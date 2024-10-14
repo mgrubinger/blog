@@ -61,6 +61,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/inter": "^4.5.14",
+		"@sveltejs/adapter-static": "^3.0.5",
 		"date-fns": "^2.29.2",
 		"node-fetch": "3.2.10",
 		"open-props": "^1.4.20",

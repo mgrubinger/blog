@@ -1,5 +1,5 @@
 <script>
-	import { MY_TWITTER_HANDLE, SITE_TITLE, SITE_URL } from '$lib/siteConfig';
+	import { SITE_TITLE, SITE_URL } from '$lib/siteConfig';
 	import Comments from '$components/Comments.svelte';
 
 	import 'prism-themes/themes/prism-one-light.min.css';
