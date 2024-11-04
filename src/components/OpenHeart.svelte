@@ -13,6 +13,8 @@
 	if (browser) url = window.location.href;
 
 	url = url.replace(/http(s)?\:\/\//, '');
+	if(dev) url = url.replace(/\:5173/, '');
+  url = url.replace(/\/$/, ""); // replace trailing slash
 
 	const possibleEmojis = ['👍', '👎', '💜', '👏', '🙄'];
 
