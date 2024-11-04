@@ -2,6 +2,8 @@
 	import { REPO_URL } from '$lib/siteConfig';
 	import Logo from './Logo.svelte';
 	import NavLink from './NavLink.svelte';
+  // import './openheart.min.js'
+
 </script>
 
 <nav>

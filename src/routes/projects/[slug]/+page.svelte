@@ -54,23 +54,3 @@
 		{@html json.content}
 	</div>
 </article>
-
-<div id="reactions">
-	<div>
-		{#if json.ghMetadata.reactions.total_count > 0}
-			Reactions: <Reactions
-				issueUrl={json.ghMetadata.issueUrl}
-				reactions={json.ghMetadata.reactions}
-			/>
-		{:else}
-			<a href={json.ghMetadata.issueUrl}>Leave a reaction </a>
-			if you liked this post! 🧡
-		{/if}
-	</div>
-	<div>
-		<Comments ghMetadata={json.ghMetadata} />
-	</div>
-</div>
-
-<style>
-</style>

@@ -5,6 +5,7 @@
 	import '@fontsource/inter/400.css';
 	import '@fontsource/inter/700.css';
 	import Footer from '$components/Footer.svelte';
+	import OpenHeart from '../components/OpenHeart.svelte';
 
 	// analytics are at: https://grooovinger.goatcounter.com/
 </script>
@@ -27,6 +28,7 @@
 	<main id="skip">
 		<slot />
 	</main>
+  <OpenHeart />
 </div>
 <Footer />
 
