@@ -1,9 +1,7 @@
 <script>
-	import { SITE_TITLE, SITE_URL } from '$lib/siteConfig';
-	import Comments from '$components/Comments.svelte';
+	import { SITE_TITLE, SITE_URL, SITE_DESCRIPTION } from '$lib/siteConfig';
 
 	import 'prism-themes/themes/prism-one-light.min.css';
-	import Reactions from '$components/Reactions.svelte';
 	import { page } from '$app/stores';
 
 	/** @type {import('./$types').PageData} */
@@ -16,10 +14,11 @@
 
 <svelte:head>
 	<title>{json.title} | {SITE_TITLE}</title>
-	<meta name="description" content="swyxkit blog" />
+	<meta name="description" content="{SITE_DESCRIPTION}" />
 
 	<link rel="canonical" href={canonical} />
 	<meta property="og:url" content={canonical} />
+	<meta property="og:site_name" content={SITE_TITLE} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={json.title} />
 	<meta name="Description" content={json.description} />
