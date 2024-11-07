@@ -36,9 +36,6 @@
 	<div class="metainfo">
 		<p>
 			{new Date(json.date).toISOString().slice(0, 10)} / {json.ghMetadata.user.login} /
-			<a href="#reactions">
-				<span>{json.ghMetadata.reactions.total_count} reactions</span>
-			</a>
 			{#if json.frontmatter.tools}
 				<span class="sep">/</span>
 				Tools: {json.frontmatter.tools}

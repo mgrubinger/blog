@@ -14,7 +14,7 @@
 
 <svelte:head>
 	<title>{json.title} | {SITE_TITLE}</title>
-	<meta name="description" content="{SITE_DESCRIPTION}" />
+	<meta name="description" content={SITE_DESCRIPTION} />
 
 	<link rel="canonical" href={canonical} />
 	<meta property="og:url" content={canonical} />
@@ -36,9 +36,6 @@
 	<div class="metainfo">
 		<p>
 			{new Date(json.date).toISOString().slice(0, 10)} / {json.ghMetadata.user.login} /
-			<a href="#reactions">
-				<span>{json.ghMetadata.reactions.total_count} reactions</span>
-			</a>
 		</p>
 	</div>
 
