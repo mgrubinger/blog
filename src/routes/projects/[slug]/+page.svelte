@@ -14,13 +14,13 @@
 
 <svelte:head>
 	<title>{json.title} | {SITE_TITLE}</title>
-	<meta name="description" content="{SITE_DESCRIPTION}" />
+	<meta name="description" content={SITE_DESCRIPTION} />
 
 	<link rel="canonical" href={canonical} />
 	<meta property="og:url" content={canonical} />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={json.title} />
-  <meta property="og:site_name" content={SITE_TITLE} />
+	<meta property="og:site_name" content={SITE_TITLE} />
 	<meta name="Description" content={json.description} />
 	<meta property="og:description" content={json.description} />
 	{#if json.image}
@@ -35,7 +35,7 @@
 	</h1>
 	<div class="metainfo">
 		<p>
-			{new Date(json.date).toISOString().slice(0, 10)} / {json.ghMetadata.user.login} /
+			{new Date(json.date).toISOString().slice(0, 10)}
 			{#if json.frontmatter.tools}
 				<span class="sep">/</span>
 				Tools: {json.frontmatter.tools}

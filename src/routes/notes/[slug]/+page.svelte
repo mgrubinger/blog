@@ -35,7 +35,7 @@
 	</h1>
 	<div class="metainfo">
 		<p>
-			{new Date(json.date).toISOString().slice(0, 10)} / {json.ghMetadata.user.login} /
+			{new Date(json.date).toISOString().slice(0, 10)}
 		</p>
 	</div>
 
