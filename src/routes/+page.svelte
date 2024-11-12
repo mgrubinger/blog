@@ -29,12 +29,12 @@
 
 <About />
 
-<h2 class="blog">Latest blog posts</h2>
+<h2 class="blog">Latest notes</h2>
 
 <BlogItemsList {items} />
 
 <div class="more">
-	<a href="/blog" class="latest-posts-link">See more blog posts</a>
+	<a href="/notes" class="latest-posts-link">See more</a>
 </div>
 
 <style lang="scss">

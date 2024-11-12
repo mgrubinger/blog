@@ -30,7 +30,9 @@
 		<slot />
 	</main>
 
-	<OpenHeart url={$page.url.href} />
+	{#key $page.url.href}
+		<OpenHeart url={$page.url.href} />
+	{/key}
 </div>
 <Footer />
 

@@ -4,7 +4,7 @@
 
 	let openheartEndpoint = 'https://openheart.martin-grubinger.workers.dev';
 	if (dev) {
-		openheartEndpoint = 'http://localhost:8787';
+		// openheartEndpoint = 'http://localhost:8787';
 	}
 
 	export let url = SITE_URL;
