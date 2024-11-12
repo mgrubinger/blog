@@ -34,13 +34,6 @@
 				{/each}
 			</ul>
 		{/if}
-
-		{#if ghMetadata && ghMetadata.reactions.total_count}
-			{#if item?.tags.length > 0}<span class="sep">/</span>{/if}
-			<p class="reactions">
-				{ghMetadata.reactions.total_count} reaction{#if ghMetadata.reactions.total_count > 1}s{/if}
-			</p>
-		{/if}
 	</div>
 </div>
 

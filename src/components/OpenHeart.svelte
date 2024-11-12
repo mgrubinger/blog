@@ -21,6 +21,7 @@
 	let count = {};
 
 	async function getIt() {
+    if(!browser) return;
 		try {
 			let res = await fetch(`${openheartEndpoint}/${url}`, {
 				method: 'GET'
