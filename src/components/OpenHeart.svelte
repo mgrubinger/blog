@@ -1,7 +1,6 @@
 <script>
 	import { browser, dev } from '$app/environment';
 	import { SITE_URL } from '$lib/siteConfig';
-	import { onMount } from 'svelte';
 
 	let openheartEndpoint = 'https://openheart.martin-grubinger.workers.dev';
 	if (dev) {
@@ -10,11 +9,11 @@
 
 	export let url = SITE_URL;
 
-	if (browser) url = window.location.href;
-
-	url = url.replace(/http(s)?\:\/\//, '');
-	if(dev) url = url.replace(/\:5173/, '');
-  url = url.replace(/\/$/, ""); // replace trailing slash
+	$: {
+		url = url.replace(/http(s)?\:\/\//, '');
+		if (dev) url = url.replace(/\:5173/, '');
+		url = url.replace(/\/$/, ''); // replace trailing slash
+	}
 
 	const possibleEmojis = ['👍', '👎', '💜', '👏', '🙄'];
 
@@ -22,17 +21,19 @@
 	let count = {};
 
 	async function getIt() {
-		let res = await fetch(`${openheartEndpoint}/${url}`, {
-			method: 'GET'
-		});
-		if (res.ok) {
-			let response = await res.json();
-
-			Object.entries(response).forEach(([emoji, prevCount]) => {
-				if (!possibleEmojis.includes(emoji)) return;
-				count[emoji] = prevCount;
+		try {
+			let res = await fetch(`${openheartEndpoint}/${url}`, {
+				method: 'GET'
 			});
-		}
+			if (res.ok) {
+				let response = await res.json();
+
+				Object.entries(response).forEach(([emoji, prevCount]) => {
+					if (!possibleEmojis.includes(emoji)) return;
+					count[emoji] = prevCount;
+				});
+			}
+		} catch (error) {}
 	}
 
 	async function postIt(emoji) {
@@ -48,7 +49,15 @@
 		state = 'idle';
 	}
 
-	onMount(getIt);
+	// onMount(() => {
+	// 	try {
+	// 		getIt();
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// });
+
+	$: getIt(url);
 </script>
 
 <div class="openheart">
@@ -131,7 +140,7 @@
 	details {
 		font-size: var(--font-size-07);
 		margin-top: var(--size-1);
-    text-align: right;
+		text-align: right;
 
 		summary {
 			list-style-type: '🤨 ';

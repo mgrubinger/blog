@@ -15,7 +15,7 @@
 	<div class="linkwall">
 		<ul class="nolist">
 			<li><a href="/">Home</a></li>
-			<li><a href="/blog">Blog</a></li>
+			<li><a href="/notes">Notes</a></li>
 			<li><a href="/projects">Projects</a></li>
 			<li><a href="/imprint">Imprint / Privacy Statement</a></li>
 

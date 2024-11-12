@@ -6,6 +6,7 @@
 	import '@fontsource/inter/700.css';
 	import Footer from '$components/Footer.svelte';
 	import OpenHeart from '../components/OpenHeart.svelte';
+	import { page } from '$app/stores';
 
 	// analytics are at: https://grooovinger.goatcounter.com/
 </script>
@@ -28,7 +29,8 @@
 	<main id="skip">
 		<slot />
 	</main>
-  <OpenHeart />
+
+	<OpenHeart url={$page.url.href} />
 </div>
 <Footer />
 
