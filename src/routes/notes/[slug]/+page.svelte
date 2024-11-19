@@ -4,12 +4,18 @@
 	import 'prism-themes/themes/prism-one-light.min.css';
 	import { page } from '$app/stores';
 
-	/** @type {import('./$types').PageData} */
-	export let data;
+	
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('./$types').PageData} data
+	 */
+
+	/** @type {Props} */
+	let { data } = $props();
 
 	/** @type {import('$lib/types').ContentItem} */
-	$: json = data.json; // warning: if you try to destructure content here, make sure to make it reactive, or your page content will not update when your user navigates
-	$: canonical = SITE_URL + $page.url.pathname;
+	let json = $derived(data.json); // warning: if you try to destructure content here, make sure to make it reactive, or your page content will not update when your user navigates
+	let canonical = $derived(SITE_URL + $page.url.pathname);
 </script>
 
 <svelte:head>

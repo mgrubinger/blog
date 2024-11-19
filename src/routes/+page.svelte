@@ -1,18 +1,16 @@
 <script>
-	import FeatureCard from '../components/FeatureCard.svelte';
-	import {
-		SITE_URL,
-		REPO_URL,
-		SITE_TITLE,
-		SITE_DESCRIPTION,
-		DEFAULT_OG_IMAGE,
-	} from '$lib/siteConfig';
+	import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION, DEFAULT_OG_IMAGE } from '$lib/siteConfig';
 	import About from './about.svx';
-	import IndexCard from '$components/IndexCard.svelte';
+
 	import BlogItemsList from '$components/BlogItemsList.svelte';
 
-	/** @type {import('./$types').PageData} */
-	export let data;
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('./$types').PageData} data
+	 */
+
+	/** @type {Props} */
+	let { data } = $props();
 	let items = data.items;
 </script>
 

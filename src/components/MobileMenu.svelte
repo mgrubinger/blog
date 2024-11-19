@@ -1,7 +1,9 @@
 <script>
-	let isOpen = false;
-	let isMenuRendered;
-	$: {
+	import { run } from 'svelte/legacy';
+
+	let isOpen = $state(false);
+	let isMenuRendered = $state();
+	run(() => {
 		if (isOpen) {
 			setTimeout(() => {
 				isMenuRendered = true;
@@ -11,7 +13,7 @@
 				isMenuRendered = false;
 			}, 300);
 		}
-	}
+	});
 </script>
 
 <div>
@@ -19,7 +21,7 @@
 
 		aria-label="Toggle menu"
 		type="button"
-		on:click={() => (isOpen = !isOpen)}
+		onclick={() => (isOpen = !isOpen)}
 	>
 		{#if !isOpen}
 			<svg
@@ -69,7 +71,7 @@
 			>
 				<a
 
-					on:click={() => setTimeout(() => (isOpen = false), 300)}
+					onclick={() => setTimeout(() => (isOpen = false), 300)}
 					href="/">Home</a
 				>
 			</li>
@@ -79,7 +81,7 @@
 			>
 				<a
 
-					on:click={() => setTimeout(() => (isOpen = false), 300)}
+					onclick={() => setTimeout(() => (isOpen = false), 300)}
 					href="/blog">Blog</a
 				>
 			</li>
@@ -89,7 +91,7 @@
 			>
 				<a
 
-					on:click={() => setTimeout(() => (isOpen = false), 300)}
+					onclick={() => setTimeout(() => (isOpen = false), 300)}
 					href="/about">About</a
 				>
 			</li>
@@ -99,7 +101,7 @@
 			>
 				<a
 
-					on:click={() => setTimeout(() => (isOpen = false), 300)}
+					onclick={() => setTimeout(() => (isOpen = false), 300)}
 					href="https://github.com/sw-yx/swyxkit">GitHub</a
 				>
 			</li>

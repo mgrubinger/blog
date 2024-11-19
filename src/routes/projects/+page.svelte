@@ -7,12 +7,18 @@
 
 	import ProjectCard from '../../components/ProjectCard.svelte';
 
-	/** @type {import('./$types').PageData} */
-	export let data;
+	
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('./$types').PageData} data
+	 */
+
+	/** @type {Props} */
+	let { data } = $props();
 
 	// technically this is a slighlty different type because doesnt have 'content' but we'll let it slide
 	/** @type {import('$lib/types').ContentItem[]} */
-	$: items = data.items;
+	let items = $derived(data.items);
 </script>
 
 <svelte:head>

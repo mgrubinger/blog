@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Nav from '../components/Nav.svelte';
 	import { SITE_TITLE } from '$lib/siteConfig';
 	import '../global.scss';
@@ -7,6 +7,12 @@
 	import Footer from '$components/Footer.svelte';
 	import OpenHeart from '../components/OpenHeart.svelte';
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	// analytics are at: https://grooovinger.goatcounter.com/
 </script>
@@ -21,18 +27,21 @@
 	<script
 		data-goatcounter="https://grooovinger.goatcounter.com/count"
 		async
-		src="//gc.zgo.at/count.js"></script>
+		src="//gc.zgo.at/count.js"
+	></script>
 </svelte:head>
 
 <div id="layout">
 	<Nav />
 	<main id="skip">
-		<slot />
+		{@render children?.()}
 	</main>
 
-	{#key $page.url.href}
-		<OpenHeart url={$page.url.href} />
-	{/key}
+	{#if browser}
+		{#key $page.url.href}
+			<OpenHeart url={$page.url.href} />
+		{/key}
+	{/if}
 </div>
 <Footer />
 

@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-	$: isActive = $page.url.pathname === $$props.href;
-	export let href;
+	let props = $props();
+	let isActive = $derived($page.url.pathname === props.href);
 </script>
 
-<a class:active={isActive} {href}><slot /></a>
+<a class:active={isActive} href={props?.href}>{@render props.children?.()}</a>
 
 <style lang="scss">
 	a {

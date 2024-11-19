@@ -7,23 +7,25 @@
 		// openheartEndpoint = 'http://localhost:8787';
 	}
 
-	export let url = SITE_URL;
+	let { url } = $props();
 
-	$: {
-		url = url.replace(/http(s)?\:\/\//, '');
-		if (dev) url = url.replace(/\:5173/, '');
-		url = url.replace(/\/$/, ''); // replace trailing slash
-	}
+	let sanitizedUrl = $derived.by(() => {
+		let u = url;
+		u = u.replace(/http(s)?\:\/\//, '');
+		if (dev) u = u.replace(/\:5173/, '');
+		u = u.replace(/\/$/, ''); // replace trailing slash
+		return u;
+	});
 
 	const possibleEmojis = ['👍', '👎', '💜', '👏', '🙄'];
 
-	let state = 'idle';
-	let count = {};
+	let state = $state('idle');
+	let count = $state({});
 
-	async function getIt() {
-    if(!browser) return;
+	async function getIt(theUrl) {
+		if (!browser) return;
 		try {
-			let res = await fetch(`${openheartEndpoint}/${url}`, {
+			let res = await fetch(`${openheartEndpoint}/${theUrl}`, {
 				method: 'GET'
 			});
 			if (res.ok) {
@@ -39,7 +41,7 @@
 
 	async function postIt(emoji) {
 		state = 'busy';
-		let res = await fetch(`${openheartEndpoint}/${url}`, {
+		let res = await fetch(`${openheartEndpoint}/${sanitizedUrl}`, {
 			method: 'POST',
 			body: emoji
 		});
@@ -58,7 +60,9 @@
 	// 	}
 	// });
 
-	$: getIt(url);
+	$effect(() => {
+		getIt(sanitizedUrl);
+	});
 </script>
 
 <div class="openheart">
@@ -67,7 +71,7 @@
 			<button
 				class="button"
 				type="button"
-				on:click={() => postIt(emoji)}
+				onclick={() => postIt(emoji)}
 				disabled={state === 'busy'}
 			>
 				<span class="emoji">{emoji}</span>

@@ -1,13 +1,27 @@
 <script>
-	// href={item.slug} title={item.data.title} date={item.data.date}
-	export let href = '#';
-	/** @type {import('$lib/types').ContentItem} */
-	export let item = undefined;
-	/** @type {import('$lib/types').GHMetadata} */
-	export let ghMetadata = null;
-	export let title = 'Untitled post';
-	/** @type {string} */
-	export let stringData = 'no date';
+	
+	
+	
+	
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [href] - href={item.slug} title={item.data.title} date={item.data.date}
+	 * @property {import('$lib/types').ContentItem} [item]
+	 * @property {import('$lib/types').GHMetadata} [ghMetadata]
+	 * @property {string} [title]
+	 * @property {string} [stringData]
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let {
+		href = '#',
+		item = undefined,
+		ghMetadata = null,
+		title = 'Untitled post',
+		stringData = 'no date',
+		children
+	} = $props();
 </script>
 
 <time class="date">{stringData}</time>
@@ -18,7 +32,7 @@
 		</a>
 	</h4>
 	<p class="short">
-		<slot />
+		{@render children?.()}
 	</p>
 	<div class="meta-and-tags flex">
 		<!-- {#if item?.readingTime}

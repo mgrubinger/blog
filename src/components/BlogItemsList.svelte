@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 	import IndexCard from "./IndexCard.svelte";
 
-  export let items;
+	let { items } = $props();
 </script>
 
 {#if items.length}

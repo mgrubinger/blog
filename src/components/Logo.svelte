@@ -1,12 +1,12 @@
 <script>
-	let os = 3;
+	let os = $state(3);
 	const max_os = 20;
 	function mouseEnter() {
 		if (os < max_os) os++;
 	}
 </script>
 
-<a href="/" class="grooovinger" on:mouseenter={mouseEnter}>
+<a href="/" class="grooovinger" onmouseenter={mouseEnter}>
 	gr{#each Array(os) as o}o{/each}vinger
 </a>
 
