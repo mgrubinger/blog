@@ -1,0 +1,60 @@
+---
+date: 2019-07-24T18:00:00.000Z
+short: Let's fix `window is not defined`
+tags: []
+created_at: 2022-09-13T15:51:40Z
+updated_at: 2023-01-03T16:20:29Z
+title: How to add a Leaflet map to a Gatsby site
+slug: how-to-add-a-leaflet-map-to-a-gatsby-site
+category: blog
+description: "> 👉 **Heads-up:** This post is probably outdated, but the main
+  concept remains the same: don't use `window` variables if you do server side
+  rendering or static site generation.\r"
+---
+
+
+> 👉 **Heads-up:** This post is probably outdated, but the main concept remains the same: don't use `window` variables if you do server side rendering or static site generation.
+
+I have been a long time user and fan of [Leaflet](https://leafletjs.com/), a popular mapping library by [@mourner](https://agafonkin.com/). Recently I needed to integrate a rather simple map (with about 20 markers) to a Gatsby site*. 
+
+As it turns out, there's a wrapper for Leaflet in React out there: [react-leaflet](https://react-leaflet.js.org/) (Some crazy naming right there, I know!). So I installed react-leaflet as a dependency and imported it, created a `<Map>`, `<TileLayer>` as well as a few `<Markers>` in my page component. Et voilà, we have a leaflet map up and showing up in my gatsby site in no time (running in *development* mode)!
+
+I simply commited and pushed my changes, as always expecting Netlify to do the rest (i.e. building the site and deploying it). Only later that day I realized the builds were throwing an error: `window is not defined` 😧
+
+## The problem
+
+Leaflet uses the `window` object internally. When trying to do SSR (server side rendering) as Gatsby does, there is no `window` (because the app is not acually loading in a brower environment). As a newcomer to React and SSR, this was new to me (although it makes sense).
+
+So wherever I need use `window.` in my code, I have to add checks if `window` actually exists. This can be done easily in my application code. But, we're using an external library (Leaflet) here and the last thing I want to do is to mess with the library itself.
+
+## The solution
+
+After trying a few different approaches without success, I came across this page in the Gatsby docs: [Debugging HTML Builds](https://www.gatsbyjs.org/docs/debugging-html-builds/#fixing-third-party-modules) 
+
+We can configure webpack to basically ignore certain modules for the build-stage. To do this, add this code to your `gatsby-node.js` file:
+
+```javascript
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /leaflet/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
+```
+
+That's it. Our Gatsby build works again! 🙃
+
+
+---
+
+ \* Right now I can't share the site we are working on as it is not published yet. But here's a screenshot:
+
+<img width="1119" alt="Screenshot of a map showing several pins" src="https://user-images.githubusercontent.com/465547/210397494-2506568d-051c-44aa-b28b-b672eac62f25.png">
