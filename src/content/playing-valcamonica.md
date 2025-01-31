@@ -56,19 +56,19 @@ Playing Valcamonica was realized in cooperation of:
 
 ---
 
-![playing_valcamonica_01](https://user-images.githubusercontent.com/465547/203114635-07e6c446-122a-40da-950c-d41fdc6fed73.jpg)
+![playing_valcamonica_01](/src/content/playing-valcamonica/203114635-07e6c446-122a-40da-950c-d41fdc6fed73.jpg)
 
-![playing_valcamonica_02](https://user-images.githubusercontent.com/465547/203114642-8101d49d-dc49-4050-b1bd-e07e6119bbb2.jpg)
+![playing_valcamonica_02](/src/content/playing-valcamonica/203114642-8101d49d-dc49-4050-b1bd-e07e6119bbb2.jpg)
 
-![playing_valcamonica_03](https://user-images.githubusercontent.com/465547/203114646-a2047386-9d34-453f-9fbb-2fad66884439.jpg)
+![playing_valcamonica_03](/src/content/playing-valcamonica/203114646-a2047386-9d34-453f-9fbb-2fad66884439.jpg)
 
-![playing_valcamonica_04](https://user-images.githubusercontent.com/465547/203114649-a4f0aa46-458b-4889-a18b-88ef10d9b12b.jpg)
+![playing_valcamonica_04](/src/content/playing-valcamonica/203114649-a4f0aa46-458b-4889-a18b-88ef10d9b12b.jpg)
 
-![playing_valcamonica_05](https://user-images.githubusercontent.com/465547/203114652-28a50b9a-f120-46a5-820d-1a1eedfc385c.jpg)
+![playing_valcamonica_05](/src/content/playing-valcamonica/203114652-28a50b9a-f120-46a5-820d-1a1eedfc385c.jpg)
 
-![playing_valcamonica_06](https://user-images.githubusercontent.com/465547/203114656-f07a1675-cd35-439a-8aa5-2658db5b5941.jpg)
+![playing_valcamonica_06](/src/content/playing-valcamonica/203114656-f07a1675-cd35-439a-8aa5-2658db5b5941.jpg)
 
-![playing_valcamonica_07](https://user-images.githubusercontent.com/465547/203114659-9866daf7-f416-4e91-8984-7c5e187f2c95.jpg)
+![playing_valcamonica_07](/src/content/playing-valcamonica/203114659-9866daf7-f416-4e91-8984-7c5e187f2c95.jpg)
 
 
 

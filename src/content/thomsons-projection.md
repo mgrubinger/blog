@@ -26,12 +26,12 @@ The application enables users to explore the maps in all their beautiful detail.
 
 This project was realized as part of the exhibition EWIGE BAUSTELLE in May 2014.
 
-![thomsonsprojection_01](https://user-images.githubusercontent.com/465547/210010523-cf0e0fb4-f410-4995-b49f-d12643de0809.jpg)
+![thomsonsprojection_01](/src/content/thomsons-projection/210010523-cf0e0fb4-f410-4995-b49f-d12643de0809.jpg)
 
-![thomsonsprojection_02](https://user-images.githubusercontent.com/465547/210010527-c898c6f8-42c7-41a3-9962-07b88fd35a29.jpg)
+![thomsonsprojection_02](/src/content/thomsons-projection/210010527-c898c6f8-42c7-41a3-9962-07b88fd35a29.jpg)
 
-![thomsonsprojection_03](https://user-images.githubusercontent.com/465547/210010528-da18f46a-b327-4f8f-8163-ee881fc66008.jpg)
+![thomsonsprojection_03](/src/content/thomsons-projection/210010528-da18f46a-b327-4f8f-8163-ee881fc66008.jpg)
 
-![thomsonsprojection_04](https://user-images.githubusercontent.com/465547/210010529-fea154cd-1fbb-410a-b8a4-95e81bac51ac.jpg)
+![thomsonsprojection_04](/src/content/thomsons-projection/210010529-fea154cd-1fbb-410a-b8a4-95e81bac51ac.jpg)
 
 

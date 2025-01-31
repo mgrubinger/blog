@@ -20,7 +20,7 @@ tags:
 
 For the new science center for renewable energy <i>Sonnenwelt</i> in Großschönau, Austria I developed a multitouch application for the final stage of the interactive journey through the center.
 
-During their visit, visitors can collect items and play games to learn more about energy usage in our daily lifes on a mobile guide. 
+During their visit, visitors can collect items and play games to learn more about energy usage in our daily lifes on a mobile guide.
 
 At the end of the visit the customized house gets transfered to a 55 inch multitouch table showing a growing village. By choosing a good spot and correct alignment for the house visitors earn additional points for saving energy.
 
@@ -31,7 +31,7 @@ Every day a different village gets created depending on how and where visitors d
 This application was developed as a subcontractor to <i>St. Pölten University of Applied Sciences</i> in collaboration with Christoph Weis.
 
 
-![sonnenwelt_01](https://user-images.githubusercontent.com/465547/203115771-ed301b4a-17ac-441a-b3b5-5b8a974f2c84.jpg)
+![sonnenwelt_01](/src/content/sonnenwelt-village/203115771-ed301b4a-17ac-441a-b3b5-5b8a974f2c84.jpg)
 (Klaus Pichler)
 
 

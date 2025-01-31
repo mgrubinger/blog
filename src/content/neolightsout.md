@@ -42,7 +42,7 @@ Stuff I used for this project:
 - [Figma](https://www.figma.com) for the favicon and other images
 - [Netlify](https://www.netlify.com) for hosting the statically exported app, thanks so much!
 
-<img width="746" alt="neolightsout_001" src="https://user-images.githubusercontent.com/465547/203114081-4b95cae1-d0e5-4619-8222-8935319ec75e.png"><br/>
+<img width="746" alt="neolightsout_001" src="/src/content/neolightsout/203114081-4b95cae1-d0e5-4619-8222-8935319ec75e.png"><br/>
 
-![neolightsout_002](https://user-images.githubusercontent.com/465547/203114087-5e909541-b2b2-4dff-af9e-20d25d3405fa.png)
+![neolightsout_002](/src/content/neolightsout/203114087-5e909541-b2b2-4dff-af9e-20d25d3405fa.png)
 

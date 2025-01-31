@@ -17,7 +17,7 @@ tags:
 
 I recently read about [Pika](https://pika.page/) blogging platform on [Mastodon](https://mastodon.social/) and checked it out. Oh, nice looking website. Nice choice of fonts, clean layout, fantastic image with some unexpected, but relateable copy around Barry. I was intrigued.
 
-![](./src/content/inspired-by-good-enough/da16ec0e-6164-4394-948b-27a8de715eb7.png)
+![Pika landing page screenshot showing bold copy "Pika is a pretty good blogging platform by the people at Good Enough. It’s pretty and easy and pretty easy. You should try it!"](/src/content/inspired-by-good-enough/da16ec0e-6164-4394-948b-27a8de715eb7.png)
 
 Then, I even scrolled down all the way to the footer, where it says "Pika is [Good Enough](https://goodenough.us/), and so are you." – and followed that link. Look at that – more products, more links! Clicky clicky. I was delighted at what I saw.
 

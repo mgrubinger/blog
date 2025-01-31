@@ -23,7 +23,7 @@ tags:
 
 For an assignment for the course Interaction Design at St. Pölten University of Applied Sciences we created a litte game that combines physical level design and a digital, projected avatar.
 
-Player 1 uses a physical controller to print the level that Player 2 has to play in real time. 
+Player 1 uses a physical controller to print the level that Player 2 has to play in real time.
 
 The printing is done using a thermoprinter. As this represented a quick and dirty prototype we used a camera and OpenCV to detect the created level.
 
@@ -32,13 +32,13 @@ As you can see in the [video](https://vimeo.com/43594944), it was great fun to p
 ## Team
 Christian Munk, Daniel Werndl, Guilia Raberger, Martin Grubinger. A project of [Progressive Factory](http://www.progressivefactory.com/).
 
-![superscroll_01](https://user-images.githubusercontent.com/465547/207104892-985f51eb-7283-47e3-8ed8-367270ff4040.jpg)
+![superscroll_01](/src/content/superscroll/207104892-985f51eb-7283-47e3-8ed8-367270ff4040.jpg)
 
-![superscroll_02](https://user-images.githubusercontent.com/465547/207104904-815fa9ad-f8b9-4710-838f-55d7484d0b6b.jpg)
+![superscroll_02](/src/content/superscroll/207104904-815fa9ad-f8b9-4710-838f-55d7484d0b6b.jpg)
 
-![superscroll_03](https://user-images.githubusercontent.com/465547/207104912-47f3fef9-df60-45f7-88f5-79d0bd5d189b.jpg)
+![superscroll_03](/src/content/superscroll/207104912-47f3fef9-df60-45f7-88f5-79d0bd5d189b.jpg)
 
-![superscroll_04](https://user-images.githubusercontent.com/465547/207104916-f345f0c2-eb10-4a0e-b96e-5f71c2efc1d6.jpg)
+![superscroll_04](/src/content/superscroll/207104916-f345f0c2-eb10-4a0e-b96e-5f71c2efc1d6.jpg)
 
-![superscroll_05](https://user-images.githubusercontent.com/465547/207104919-06f7e2e4-a47d-4d52-ba97-89da6f0a0c0b.jpg)
+![superscroll_05](/src/content/superscroll/207104919-06f7e2e4-a47d-4d52-ba97-89da6f0a0c0b.jpg)
 

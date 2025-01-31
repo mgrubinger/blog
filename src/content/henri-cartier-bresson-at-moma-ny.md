@@ -30,10 +30,10 @@ Looking back I find it highly interesting that the result of the project was a s
 ## Awards
 The project was awarded a [Best of the Web Award](https://en.wikipedia.org/wiki/Best_of_the_Web_awards#2011) by Museums and the Web in 2011.
 
-![MoMA_01](https://user-images.githubusercontent.com/465547/203113467-47d9d07e-fe5e-470d-ac15-87be610cd6a0.jpg)
+![MoMA_01](/src/content/henri-cartier-bresson-at-moma-ny/203113467-47d9d07e-fe5e-470d-ac15-87be610cd6a0.jpg)
 
-![MoMA_02](https://user-images.githubusercontent.com/465547/203113473-67ab91ae-e5a3-4881-996d-20d3ada6bfe8.jpg)
+![MoMA_02](/src/content/henri-cartier-bresson-at-moma-ny/203113473-67ab91ae-e5a3-4881-996d-20d3ada6bfe8.jpg)
 
-![MoMA_03](https://user-images.githubusercontent.com/465547/203113477-bba53451-05b3-47c5-b77f-8d04c2ca8da7.jpg)
+![MoMA_03](/src/content/henri-cartier-bresson-at-moma-ny/203113477-bba53451-05b3-47c5-b77f-8d04c2ca8da7.jpg)
 
-![MoMA_04](https://user-images.githubusercontent.com/465547/203113479-94358b0c-fb9c-4b63-b18d-d70a0e877c3c.jpg)
+![MoMA_04](/src/content/henri-cartier-bresson-at-moma-ny/203113479-94358b0c-fb9c-4b63-b18d-d70a0e877c3c.jpg)

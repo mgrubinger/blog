@@ -30,8 +30,8 @@ Blumenstein Kerstin, Eitler Thomas, Grubinger Martin, Kuba Roman, Maurice Wohlk√
 ## Awards
 This project was awarded the Golden Wire 2009.
 
-![wup_01](https://user-images.githubusercontent.com/465547/210011273-6efed3b1-bb67-419e-9b19-c1a0450925ab.jpg)
+![wup_01](/src/content/wup-at-ars-electronica/210011273-6efed3b1-bb67-419e-9b19-c1a0450925ab.jpg)
 
-![wup_02](https://user-images.githubusercontent.com/465547/210011284-26a432d0-893f-4b39-83bf-ff4c6de595d6.jpg)
+![wup_02](/src/content/wup-at-ars-electronica/210011284-26a432d0-893f-4b39-83bf-ff4c6de595d6.jpg)
 
 

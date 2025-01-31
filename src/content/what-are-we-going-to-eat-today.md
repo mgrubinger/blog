@@ -36,17 +36,18 @@ Using *What are we going to eat today?* you can add all the possible things you 
 
 **Tech:** I used svelte to build the app, which was really easy to get started with. I especially like how many things are already baked in (transition, stores, settings tags in the `<head>` of your document, to name just a few) and still it's very simple to use.
 
-For storing data as well as authentication, I used Google Firebase. It was quite easy to set up and use in a svelte app. Unfortunately I only discovered late in the process that it adds around 500kb to my Javascript-bundle. Uarg! Since this is just a fun side-project, I did not bother to implement an other data storing and auth solution.
+For storing data as well as authentication, I used Google Firebase. It was quite easy to set up and use in a svelte app. Unfortunately I only discovered late in the process that it adds around 500kb to my Javascript-bundle. Uarg! Since this is just a fun side-project, I did not bother to implement an other data storing and auth solution.
+
 
 The app was hosted on [Netlify](https://netlify.com/), of course.
 
-
-![whatarewegoingtoeattoday01](https://user-images.githubusercontent.com/465547/210010707-22da87ab-95a3-4e6f-8bee-1f2bf9419347.png)
-
-![whatarewegoingtoeattoday02](https://user-images.githubusercontent.com/465547/210010709-542c8b01-6ef5-4bdf-9679-1b157884af89.png)
-
-![whatarewegoingtoeattoday03](https://user-images.githubusercontent.com/465547/210010712-355e48e2-866e-4b34-83c4-ab9faf9235fd.png)
-
-![whatarewegoingtoeattoday04](https://user-images.githubusercontent.com/465547/210010713-c723957b-4a58-43ec-8732-9f6dcfede78c.png)
+.png
+![whatarewegoingtoeattoday01](/src/content/what-are-we-going-to-eat-today/210010707-22da87ab-95a3-4e6f-8bee-1f2bf9419347.png.png)
+.png
+![whatarewegoingtoeattoday02](/src/content/what-are-we-going-to-eat-today/210010709-542c8b01-6ef5-4bdf-9679-1b157884af89.png.png)
+.png
+![whatarewegoingtoeattoday03](/src/content/what-are-we-going-to-eat-today/210010712-355e48e2-866e-4b34-83c4-ab9faf9235fd.png.png)
+.png
+![whatarewegoingtoeattoday04](/src/content/what-are-we-going-to-eat-today/210010713-c723957b-4a58-43ec-8732-9f6dcfede78c.png.png)
 
 

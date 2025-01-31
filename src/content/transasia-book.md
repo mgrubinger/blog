@@ -30,12 +30,12 @@ After months of photo editing, writing, layouting and designing I finally printe
 
 Currently I only sell the book directly, so if you're interested please contact me: [transasia@mgrubinger.at](mailto:transasia@mgrubinger.at)
 
-![transasia_book_0001](https://user-images.githubusercontent.com/465547/202225593-6b595ae4-0859-415d-99f6-02dcbda2e9e3.jpg)
+![transasia_book_0001](/src/content/transasia-book/202225593-6b595ae4-0859-415d-99f6-02dcbda2e9e3.jpg)
 
-![transasia_book_0002](https://user-images.githubusercontent.com/465547/202225607-11ec479d-79c4-4144-bea4-831b50b47ebc.jpg)
+![transasia_book_0002](/src/content/transasia-book/202225607-11ec479d-79c4-4144-bea4-831b50b47ebc.jpg)
 
-![transasia_book_0003](https://user-images.githubusercontent.com/465547/202225612-7cd5fdeb-ae50-439e-8a19-6b67142bd7f2.jpg)
+![transasia_book_0003](/src/content/transasia-book/202225612-7cd5fdeb-ae50-439e-8a19-6b67142bd7f2.jpg)
 
-![transasia_book_0004](https://user-images.githubusercontent.com/465547/202225619-f2599fdb-ff36-48ac-af03-38488a3abfbe.jpg)
+![transasia_book_0004](/src/content/transasia-book/202225619-f2599fdb-ff36-48ac-af03-38488a3abfbe.jpg)
 
-![transasia_book_0005](https://user-images.githubusercontent.com/465547/202225626-a7672548-44b1-43be-abe2-4a7b0741edff.jpg)
+![transasia_book_0005](/src/content/transasia-book/202225626-a7672548-44b1-43be-abe2-4a7b0741edff.jpg)

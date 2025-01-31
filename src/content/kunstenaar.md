@@ -24,21 +24,21 @@ I developed a multi-touch drawing application using emerging and standard web-te
 
 Additionally, a large projection showed the eight most recent drawings on a large projection wall.
 
-As a result of this project I wrote my master thesis on the possibilities of multi-touch-enabled web applications. 
+As a result of this project I wrote my master thesis on the possibilities of multi-touch-enabled web applications.
 
-![kunstenaar_01](https://user-images.githubusercontent.com/465547/211394513-b96da4d7-ac95-48ed-affa-8878f3208a60.jpg)
+![kunstenaar_01](/src/content/kunstenaar/211394513-b96da4d7-ac95-48ed-affa-8878f3208a60.jpg)
 
-![kunstenaar_02](https://user-images.githubusercontent.com/465547/211394522-4613d0db-7d44-438e-bc46-137a497811e2.jpg)
+![kunstenaar_02](/src/content/kunstenaar/211394522-4613d0db-7d44-438e-bc46-137a497811e2.jpg)
 
-![kunstenaar_03](https://user-images.githubusercontent.com/465547/211394524-1dc63225-b133-4803-b028-dbcfb247ccdb.jpg)
+![kunstenaar_03](/src/content/kunstenaar/211394524-1dc63225-b133-4803-b028-dbcfb247ccdb.jpg)
 
-![kunstenaar_04](https://user-images.githubusercontent.com/465547/211394530-32a62ff9-9e29-4086-aea9-966e6f6cc30b.jpg)
+![kunstenaar_04](/src/content/kunstenaar/211394530-32a62ff9-9e29-4086-aea9-966e6f6cc30b.jpg)
 
-![kunstenaar_05](https://user-images.githubusercontent.com/465547/211394531-1fdd21fb-1385-4e02-94fb-3b9e75aea077.jpg)
+![kunstenaar_05](/src/content/kunstenaar/211394531-1fdd21fb-1385-4e02-94fb-3b9e75aea077.jpg)
 
-![kunstenaar_06](https://user-images.githubusercontent.com/465547/211394533-84b4ce98-2fc0-4cf7-9036-67bf2500deaf.jpg)
+![kunstenaar_06](/src/content/kunstenaar/211394533-84b4ce98-2fc0-4cf7-9036-67bf2500deaf.jpg)
 
-![kunstenaar_07](https://user-images.githubusercontent.com/465547/211394537-14be4e49-1aec-4a1e-8692-a271a7fccc64.jpg)
+![kunstenaar_07](/src/content/kunstenaar/211394537-14be4e49-1aec-4a1e-8692-a271a7fccc64.jpg)
 
-![kunstenaar_08](https://user-images.githubusercontent.com/465547/211394541-0963974c-83e6-47da-ae3b-c299eac63f1c.jpg)
+![kunstenaar_08](/src/content/kunstenaar/211394541-0963974c-83e6-47da-ae3b-c299eac63f1c.jpg)
 

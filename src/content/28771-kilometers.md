@@ -22,9 +22,9 @@ tags:
   - Project
 ---
 
- 
 
-For my slide show [*Transasia – Mit dem Motorrad von Meidling nach Malaysia*](http://transasia.mgrubinger.at/) I needed an interactive way to visualize the route I traveled through asia. I built this [little web app](https://28771km.grooovinger.com/), where I can control the drawing of my route simply by scrolling. 
+
+For my slide show [*Transasia – Mit dem Motorrad von Meidling nach Malaysia*](http://transasia.mgrubinger.at/) I needed an interactive way to visualize the route I traveled through asia. I built this [little web app](https://28771km.grooovinger.com/), where I can control the drawing of my route simply by scrolling.
 
 The plot: for **one scrolled pixel**, you **travel for one kilometer**. Thus the name ["28771 kilometers"](https://28771km.grooovinger.com/) as this is the total length of the trip.
 
@@ -36,9 +36,9 @@ This is in no way a finished product but it served me well during my presentatio
 
 Visit ["28771 kilometers"](https://28771km.grooovinger.com/)
 
-![28771km_01](https://user-images.githubusercontent.com/465547/202228535-b623696f-f124-4dd9-820a-4687aa321dd8.jpg)
+![28771km_01](/src/content/28771-kilometers/202228535-b623696f-f124-4dd9-820a-4687aa321dd8.jpg)
 
-![28771km_02](https://user-images.githubusercontent.com/465547/202228605-95b5240b-5613-4594-ad4a-14ece003d1de.jpg)
+![28771km_02](/src/content/28771-kilometers/202228605-95b5240b-5613-4594-ad4a-14ece003d1de.jpg)
 
-![28771km_03](https://user-images.githubusercontent.com/465547/202228617-b8a9ad9b-d4d7-4e99-981a-28d808332839.jpg)
+![28771km_03](/src/content/28771-kilometers/202228617-b8a9ad9b-d4d7-4e99-981a-28d808332839.jpg)
 

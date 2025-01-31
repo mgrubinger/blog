@@ -16,7 +16,7 @@ tags:
   - Project
 ---
 
- 
+
 
 *This project was realized at [Fluxguide](https://www.fluxguide.com)*
 
@@ -25,8 +25,8 @@ We developed a brand new media guiding system to further enhance the visitor exp
 Visitors to the complex can rent a media guide to explore attractions and shows during their visit. As they walk around,
 the app will automagically show closeby exhibits and attractions. A map prevents getting lost.
 
-The guide is available in 14 languages and can also be used inside the theatres 
-to listen to synchronized audio in the visitor's own language. At specific locations 
+The guide is available in 14 languages and can also be used inside the theatres
+to listen to synchronized audio in the visitor's own language. At specific locations
 the exhibits come to live using Augmented Reality.
 
 
@@ -38,7 +38,7 @@ the exhibits come to live using Augmented Reality.
 - iBeacon triggering throughout the visitor complex
 - Dynamic GPS-based triggering while on bus-rides
 - lipsync audio content while in theatres
-- Anti-theft alarm system 
+- Anti-theft alarm system
 - Deployed on site, over 400 devices including charging infrastructure
 - custom CMS to edit contents
 
@@ -58,12 +58,12 @@ In addition to the onsite visitor guide, we developed a downloadable educational
 [Psiori](https://www.psiori.com) – AR development
 
 
-![ksc_01](https://user-images.githubusercontent.com/465547/203112733-c946d941-a583-45d1-bc3c-82fbf55f7966.jpg)
+![ksc_01](/src/content/kennedy-space-center-visitor-guide/203112733-c946d941-a583-45d1-bc3c-82fbf55f7966.jpg)
 
-![ksc_02](https://user-images.githubusercontent.com/465547/203112737-08da95be-654f-40a2-bcf8-3a2c05512a48.png)
+![ksc_02](/src/content/kennedy-space-center-visitor-guide/203112737-08da95be-654f-40a2-bcf8-3a2c05512a48.png)
 
-![ksc_03](https://user-images.githubusercontent.com/465547/203112741-5583ddc9-06fb-4523-8cda-56dc891450a2.png)
+![ksc_03](/src/content/kennedy-space-center-visitor-guide/203112741-5583ddc9-06fb-4523-8cda-56dc891450a2.png)
 
-![ksc_04](https://user-images.githubusercontent.com/465547/203112742-944cf0f3-fd1f-4893-ac0f-57ed73e99ff8.png)
+![ksc_04](/src/content/kennedy-space-center-visitor-guide/203112742-944cf0f3-fd1f-4893-ac0f-57ed73e99ff8.png)
 
-![ksc_05](https://user-images.githubusercontent.com/465547/203112746-dfb03ce1-af53-4279-9633-e58c5b01b25f.png)
+![ksc_05](/src/content/kennedy-space-center-visitor-guide/203112746-dfb03ce1-af53-4279-9633-e58c5b01b25f.png)

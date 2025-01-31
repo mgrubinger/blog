@@ -5,7 +5,7 @@ import { createWriteStream, existsSync } from 'node:fs';
 import fetch from "node-fetch";
 import {fileTypeFromBuffer} from "file-type";
 
-const OUTPUT_DIR = './src/content';
+const OUTPUT_DIR = '/src/content';
 
 let blogposts = await listContent();
 
@@ -45,7 +45,6 @@ async function savePhotoFromAPI(url, filename, slug) {
   }
 }
 
-const rex = /https:\/\/github\.com\/user\-attachments\/assets\/([\w|-]*)/gi;
 
 console.log(blogposts[0]);
 
@@ -54,10 +53,21 @@ blogposts.forEach(async (entry) => {
   // let entry = blogposts[0];
   let frontMatter = toFrontmatter(entry);
 
-  let matches = entry.content.matchAll(rex);
   let imagePromises = [];
-  for(let image of matches) {
-    imagePromises.push(savePhotoFromAPI(image[0], image[1], entry.slug));
+  {
+    const rex = /https:\/\/github\.com\/user\-attachments\/assets\/([\w|-]*)/gi;
+    let matches = entry.content.matchAll(rex);
+    for(let image of matches) {
+      imagePromises.push(savePhotoFromAPI(image[0], image[1], entry.slug));
+    }
+  }
+
+  {
+    const rex = /https:\/\/user-images\.githubusercontent\.com\/465547\/([\w|-]*[\.|\w]+)/gi;
+    let matches = entry.content.matchAll(rex);
+    for(let image of matches) {
+      imagePromises.push(savePhotoFromAPI(image[0], image[1], entry.slug));
+    }
   }
 
   let imageFiles = await Promise.all(imagePromises);

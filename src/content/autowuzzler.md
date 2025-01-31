@@ -23,7 +23,7 @@ Autowuzzler is a virtual foosball (table soccer) multiplayer game. Invite your f
 Note: This game is in public beta right now and far from finished (I have plenty of ideas how to take this further). If you  experience any issues, please do not hesitate to contact me ([@grooovinger](https://mastodon.social/@grooovinger) or hello@mgrubinger.at)
 
 
-<img width="500" alt="autowuzzler-ingame-6players" src="https://user-images.githubusercontent.com/465547/207396769-02232676-3753-4320-bf9f-c538373ce698.png">
+<img width="500" alt="autowuzzler-ingame-6players" src="./autowuzzler/207396769-02232676-3753-4320-bf9f-c538373ce698.png">
 
 ### Idea
 
@@ -31,15 +31,15 @@ During the first Covid-19 lockdown, I missed playing foosball with my colleagues
 
 ### Gameplay
 
-The game resembles a 2D topdown view of a foosball table. Each player is assigned to one of two teams and tries to kick the ball into the correct goal. The first team reaching 10 goals wins. 
+The game resembles a 2D topdown view of a foosball table. Each player is assigned to one of two teams and tries to kick the ball into the correct goal. The first team reaching 10 goals wins.
 
 ### Joining a Game
 
-To start a new game, a player creates a game PIN for a session. This game PIN can then be shared with friends as a unique URL to their game session. When a player first loads the game, they enter a nickname which will appear next to the players car. 
+To start a new game, a player creates a game PIN for a session. This game PIN can then be shared with friends as a unique URL to their game session. When a player first loads the game, they enter a nickname which will appear next to the players car.
 
 ### Tech-Stack
 
-This application is built on the following stack: 
+This application is built on the following stack:
 
 - SvelteKit for the public app and frontend (autowuzzler.com)
 - Colyseus.js as an authoritative real-time game server
