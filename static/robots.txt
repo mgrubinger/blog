@@ -1,3 +1,0 @@
-Sitemap: https://grooovinger.com/sitemap.xml
-
-# https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap#addsitemap

@@ -1,0 +1,82 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import GlobalLayout from "./GlobalLayout.astro";
+import { Picture } from "astro:assets";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, video, tools, link, short, date, updatedDate, cover } =
+  Astro.props;
+
+const dateOptions = { month: "numeric", day: "numeric", year: "numeric" };
+const d1 = new Intl.DateTimeFormat("de-DE", dateOptions).format(date);
+const d2 = new Intl.DateTimeFormat("de-DE", dateOptions).format(updatedDate);
+const showUpdatedDate = d1 != d2;
+---
+
+<GlobalLayout title={title} description={short}>
+  <article>
+    <div class="hero-image">
+      {cover && <Picture src={cover} alt="Cover image" width={1000} />}
+    </div>
+    <div class="prose">
+      <div class="title">
+        <div class="date muted">
+          <FormattedDate date={date} options={{ year: "numeric" }} />
+        </div>
+        <h1>{title}</h1>
+        <div class="links">
+          {
+            link && (
+              <a href={link} target="_blank">
+                Visit →
+              </a>
+            )
+          }
+          {
+            video && (
+              <a href={video} target="_blank">
+                Watch video →
+              </a>
+            )
+          }
+        </div>
+        <hr />
+      </div>
+      <slot />
+      {
+        tools && (
+          <p class="muted">
+            <strong>Tools used:</strong> {tools}
+          </p>
+        )
+      }
+    </div>
+  </article>
+</GlobalLayout>
+
+<style>
+  .date {
+    display: flex;
+    gap: 1em;
+  }
+  .last-updated-on {
+    color: var(--color-font-muted);
+  }
+  .hero-image {
+    margin-bottom: 2rem;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    a {
+      display: inline-block;
+    }
+  }
+</style>

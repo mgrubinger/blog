@@ -1,0 +1,118 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import { Picture } from "astro:assets";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<GlobalLayout title="Projects" description="">
+  <h1>Projects</h1>
+  <p>Some of the more noteworthy projects I have worked on in the past.</p>
+  <ul class="projects">
+    {
+      projects.map((project) => (
+        <li class="project">
+          <a class="project-link" href={`/projects/${project.id}/`}>
+            {project.data.cover && (
+              <Picture
+                class="cover"
+                src={project.data.cover}
+                alt={`${project.data.title} cover image`}
+                width={600}
+              />
+            )}
+            <h2 class="title">{project.data.title}</h2>
+            <span class="date">
+              <FormattedDate
+                date={project.data.date}
+                options={{ year: "numeric" }}
+              />
+              {project.data.type && ` | ${project.data.type}`}
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</GlobalLayout>
+
+<style>
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .project {
+    min-width: 0;
+
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    /* --_rotate: 2deg;
+
+    &:nth-child(even) {
+      --_rotate: -2deg;
+    } */
+  }
+  .project-link {
+    display: block;
+    position: relative;
+    height: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -1rem;
+      border-radius: 10px;
+      transform: translate3d(0, 0, 0);
+      scale: 0.97;
+      box-shadow: 0 0 20px -24px rgba(0, 0, 0, 0.5);
+      transition-duration: 200ms;
+      transition-timing-function: ease-in-out;
+      transition-property: scale, rotate, box-shadow;
+      z-index: -1;
+    }
+    &:hover::after {
+      box-shadow: 0 0 25px -8px rgba(0, 0, 0, 0.4);
+      scale: 1;
+      /* rotate: var(--_rotate); */
+    }
+    &:hover .cover {
+      scale: 1.02;
+      transition-delay: 0;
+      transition-duration: 80ms;
+    }
+  }
+  .date {
+    color: var(--color-font-muted);
+  }
+  .cover {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: scale 350ms ease-in-out;
+    transition-delay: 50ms;
+  }
+</style>

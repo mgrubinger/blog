@@ -1,0 +1,104 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  MASTODON_URL,
+  MY_EMAIL,
+} from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      :root {
+        --radius-blob: 63% 37% 37% 63% / 43% 37% 63% 57%;
+      }
+      .profileimage {
+        border-radius: var(--radius-blob);
+        flex-shrink: 0;
+      }
+      @media (max-width: 600px) {
+        .profileimage {
+          width: 100px;
+        }
+        h1 {
+          font-size: 1.5em;
+        }
+      }
+      .profile-and-head {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="profile-and-head">
+        <img
+          class="profileimage"
+          width="140"
+          height="140"
+          src="https://avatars.githubusercontent.com/u/465547?v=4"
+          alt="Portrait of Martin Grubinger"
+        />
+        <h1>Hi, I'm Martin Grubinger, builder of web-things.</h1>
+      </div>
+      <p>Welcome to my website, my blog, my <em>digital garden</em> 🪴.</p>
+      <p>
+        This is where I write about <a href="/notes">what I've learned</a> and show
+        off
+        <a href="/projects">projects</a> I worked on. This is also where I want to
+        be found on the web. I aim to <i>cultivate</i>
+        this site as is grows, write more, improve it, experiment and try out new
+        things.
+      </p>
+      <p>
+        Currently I am a Lead Front-end Developer at
+        <a href="https://geizhals.at/" target="_blank">Geizhals.at</a> (since February
+        2020). From 2013–2020 I was a Technology Director at
+        <a href="https://fluxguide.com/">Fluxguide</a> in Vienna. I also tought a
+        course on front-end web development at <a
+          href="https://www.fhstp.ac.at/de"
+          >University of Applied Sciences St. Pölten</a
+        > from 2019–2021.
+      </p>
+      <p>
+        From 2007-2012 I studied Digital Media Technologies at St. Pölten
+        University of Applied Sciences. In 2010 I had the amazing opportunity to
+        do an internship at Second Story Interactive Studios (now part of <a
+          href="https://www.razorfish.com/">Razorfish</a
+        >) in Portland, Oregon. Besides my main job I love working on side
+        projects to try out new tools. Some of those you can see in the <a
+          href="/projects">projects</a
+        >
+        section.
+      </p>
+      <p>
+        In 2015/16 I traveled from Vienna, Austria to Kuala Lumpur, Malaysia by
+        motorcycle. I self-published <a href="/projects/transasia-book"
+          >a book about the trip</a
+        >, and did a couple of slideshow presentations in Austria and Canada.
+      </p>
+      <p>Married 💍 to a wonderful woman. Dad of 2 wonderful kids 🛝.</p>
+      <p>
+        Trivia: I am frequently mistaken for <a
+          href="https://www.martingrubinger.com/"
+          target="_blank">Martin Grubinger</a
+        > (I don't blame you).
+      </p>
+      <h2>Contact</h2>
+      <p>
+        Find me on <a href={MASTODON_URL} rel="noopener">Mastodon</a> or drop me
+        an email at <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>

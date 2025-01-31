@@ -1,0 +1,85 @@
+---
+import GlobalLayout from "../../layouts/GlobalLayout.astro";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+const notes = (await getCollection("blog")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<GlobalLayout title="Notes" description="Collection of notes">
+  <h1>Notes</h1>
+  <p>
+    A collection of notes, blogposts and TIL (Today I Learned) type of posts.
+    Some long, some not so long.
+  </p>
+  <section class="notes">
+    <ul>
+      {
+        notes.map((note) => (
+          <li>
+            <span class="date-n-tags">
+              <FormattedDate date={note.data.date} />
+              <span class="tags">
+                {note.data.tags.map((tag) => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </span>
+            </span>
+            <a href={`/notes/${note.id}/`}>
+              {note.data.cover && (
+                <img width={720} height={360} src={note.data.cover} alt="" />
+              )}
+              <h2 class="title">{note.data.title}</h2>
+            </a>
+            <div>{note.data.short}</div>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</GlobalLayout>
+
+<style>
+  .notes {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 0;
+      font-size: 1rem;
+
+      * {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    time {
+    }
+    .title {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+
+    .tag {
+      color: var(--color-font-muted);
+      font-size: 1rem;
+    }
+    .tag::before {
+      content: "#";
+    }
+  }
+  .date-n-tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+</style>

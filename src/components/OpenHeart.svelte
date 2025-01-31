@@ -1,159 +1,158 @@
 <script>
-	import { browser, dev } from '$app/environment';
-	import { SITE_URL } from '$lib/siteConfig';
+  import { onMount } from "svelte";
 
-	let openheartEndpoint = 'https://openheart.martin-grubinger.workers.dev';
-	if (dev) {
-		// openheartEndpoint = 'http://localhost:8787';
-	}
+  let openheartEndpoint = "https://openheart.martin-grubinger.workers.dev";
 
-	let { url } = $props();
+  let url = $state("");
+  onMount(() => {
+    url = window.location.href;
 
-	let sanitizedUrl = $derived.by(() => {
-		let u = url;
-		u = u.replace(/http(s)?\:\/\//, '');
-		if (dev) u = u.replace(/\:5173/, '');
-		u = u.replace(/\/$/, ''); // replace trailing slash
-		return u;
-	});
+    getIt(sanitizedUrl);
+  });
 
-	const possibleEmojis = ['👍', '👎', '💜', '👏', '🙄'];
+  let sanitizedUrl = $derived.by(() => {
+    let u = url;
+    u = u.replace(/http(s)?\:\/\//, "");
+    u = u.replace(/\/$/, ""); // replace trailing slash
+    return u;
+  });
 
-	let state = $state('idle');
-	let count = $state({});
+  const possibleEmojis = ["👍", "👎", "💜", "👏", "🙄"];
 
-	async function getIt(theUrl) {
-		if (!browser) return;
-		try {
-			let res = await fetch(`${openheartEndpoint}/${theUrl}`, {
-				method: 'GET'
-			});
-			if (res.ok) {
-				let response = await res.json();
+  let state = $state("idle");
+  let count = $state({});
 
-				Object.entries(response).forEach(([emoji, prevCount]) => {
-					if (!possibleEmojis.includes(emoji)) return;
-					count[emoji] = prevCount;
-				});
-			}
-		} catch (error) {}
-	}
+  async function getIt(theUrl) {
+    if (theUrl == "") return;
+    if (theUrl.includes("localhost")) return;
+    try {
+      let res = await fetch(`${openheartEndpoint}/${theUrl}`, {
+        method: "GET",
+      });
+      if (res.ok) {
+        let response = await res.json();
 
-	async function postIt(emoji) {
-		state = 'busy';
-		let res = await fetch(`${openheartEndpoint}/${sanitizedUrl}`, {
-			method: 'POST',
-			body: emoji
-		});
-		if (res.ok) {
-			let response = await res.json();
-			if (response.count) count[emoji] = response.count;
-		}
-		state = 'idle';
-	}
+        Object.entries(response).forEach(([emoji, prevCount]) => {
+          if (!possibleEmojis.includes(emoji)) return;
+          count[emoji] = prevCount;
+        });
+      }
+    } catch (error) {}
+  }
 
-	// onMount(() => {
-	// 	try {
-	// 		getIt();
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// });
-
-	$effect(() => {
-		getIt(sanitizedUrl);
-	});
+  async function postIt(emoji) {
+    state = "busy";
+    let res = await fetch(`${openheartEndpoint}/${sanitizedUrl}`, {
+      method: "POST",
+      body: emoji,
+    });
+    if (res.ok) {
+      let response = await res.json();
+      if (response.count) count[emoji] = response.count;
+    }
+    state = "idle";
+  }
 </script>
 
 <div class="openheart">
-	<div class="reactions">
-		{#each possibleEmojis as emoji}
-			<button
-				class="button"
-				type="button"
-				onclick={() => postIt(emoji)}
-				disabled={state === 'busy'}
-			>
-				<span class="emoji">{emoji}</span>
-				<span class="count"
-					>{#if count[emoji]}{count[emoji]}{/if}</span
-				>
-			</button>
-		{/each}
-	</div>
-	<details>
-		<summary> what's this? </summary>
-		<p>
-			This is an implementation of the <a href="https://openheart.fyi/">Open Heart Protocol</a>.
-		</p>
-	</details>
+  <div class="reactions">
+    {#each possibleEmojis as emoji}
+      <button
+        class="button"
+        type="button"
+        onclick={() => postIt(emoji)}
+        disabled={state === "busy"}
+      >
+        <span class="emoji">{emoji}</span>
+        <span class="count"
+          >{#if count[emoji]}{count[emoji]}{/if}</span
+        >
+      </button>
+    {/each}
+  </div>
+  <details>
+    <summary> what's this? </summary>
+    <p>
+      This is an implementation of the <a href="https://openheart.fyi/">
+        Open Heart Protocol
+      </a>.<br />
+      Feel free to send a reaction for this page. ☺️
+    </p>
+  </details>
 </div>
 
 <style lang="scss">
-	.openheart {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		margin-top: var(--size-8);
-	}
-	.reactions {
-		display: flex;
-		gap: 6px;
-		background-color: #f2f2f2;
-		padding: 10px;
-		width: min-content;
-		border-radius: 20px;
-	}
-	.button {
-		border: 1px solid transparent;
-		border-radius: 30px;
-		display: flex;
-		padding: 1rem;
-		width: var(--size-8);
-		height: var(--size-8);
-		flex-shrink: 0;
+  .openheart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1rem;
+  }
+  .reactions {
+    display: flex;
+    gap: 1rem;
+    border: 2px dotted rgb(var(--gray-light));
+    padding: 10px;
+    width: min-content;
+    border-radius: 20px;
 
-		align-items: center;
-		justify-content: center;
-		background-color: #ffffff7d;
-		cursor: pointer;
-		position: relative;
+  }
+  .button {
+    border: 1px solid transparent;
+    border-radius: 30px;
+    display: flex;
+    padding: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
 
-		.emoji {
-			transition: all 120ms ease-in-out;
-			will-change: transform;
-		}
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228 228 228 / 44%);
+    cursor: pointer;
+    position: relative;
 
-		&:hover,
-		&:focus {
-			background-color: #fff;
-			border-color: var(--primary);
+    .emoji {
+      transition: all 120ms ease-in-out;
+      will-change: transform;
+      font-size: 1rem;
+    }
 
-			.emoji {
-				transform: scale(1.2) translateY(-5px) rotate(-5deg);
-			}
-		}
-	}
-	.count {
-		font-size: 60%;
-		position: absolute;
-		bottom: -2px;
-		color: #666;
-		font-weight: bold;
-	}
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      border-color: var(--accent);
 
-	details {
-		font-size: var(--font-size-07);
-		margin-top: var(--size-1);
-		text-align: right;
+      .emoji {
+        transform: scale(1.2) translateY(-5px) rotate(-5deg);
+      }
+    }
+  }
+  .count {
+    font-size: 60%;
+    position: absolute;
+    bottom: -2px;
+    color: #666;
+    font-weight: bold;
+  }
 
-		summary {
-			list-style-type: '🤨 ';
-			cursor: pointer;
+  details {
+    font-size: var(--font-size-07);
+    margin-top: var(--size-1);
+    text-align: right;
+    font-size: 1rem;
 
-			&:hover {
-				color: var(--primary);
-			}
-		}
-	}
+    summary {
+      list-style-type: "";
+      cursor: pointer;
+      color: var(--color-font-muted);
+
+      &:hover {
+        color: var(--accent-dark);
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
 </style>

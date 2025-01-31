@@ -1,0 +1,26 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import OpenHeart from "../components/OpenHeart.svelte";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, date, updatedDate, cover } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <slot />
+      <OpenHeart client:visible />
+    </main>
+    <Footer />
+  </body>
+</html>
