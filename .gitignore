@@ -23,5 +23,5 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# syncthing conflicts
+# syncthing conflicts test
 .sync-conflict*
