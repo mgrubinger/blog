@@ -71,7 +71,7 @@
     {/each}
   </div>
   <details>
-    <summary> what's this? </summary>
+    <summary>what's this?</summary>
     <p>
       This is an implementation of the <a href="https://openheart.fyi/">
         Open Heart Protocol
