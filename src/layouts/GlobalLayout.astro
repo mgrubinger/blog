@@ -7,12 +7,12 @@ import OpenHeart from "../components/OpenHeart.svelte";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, date, updatedDate, cover } = Astro.props;
+const { title, description, date, cover, publishedDate } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} date={date} />
   </head>
 
   <body>

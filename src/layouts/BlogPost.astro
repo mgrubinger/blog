@@ -18,7 +18,7 @@ const d2 = new Intl.DateTimeFormat("de-DE", dateOptions).format(updatedDate);
 const showUpdatedDate = d1 != d2;
 ---
 
-<GlobalLayout title={title} description={short}>
+<GlobalLayout title={title} description={short} date={d1}>
   <article>
     <div class="hero-image">
       {cover && <Picture src={cover} alt="Cover image" />}
