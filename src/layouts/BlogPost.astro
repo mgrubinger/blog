@@ -5,12 +5,13 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import GlobalLayout from "./GlobalLayout.astro";
-import {Picture} from 'astro:assets';
+import { Picture } from "astro:assets";
+import Tags from "../components/Tags.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, short, date, updatedDate, cover } = Astro.props;
-
+const { title, description, short, date, updatedDate, cover, tags } =
+  Astro.props;
 
 const dateOptions = { month: "numeric", day: "numeric", year: "numeric" };
 const d1 = new Intl.DateTimeFormat("de-DE", dateOptions).format(date);
@@ -34,6 +35,8 @@ const showUpdatedDate = d1 != d2;
               </div>
             )
           }
+
+          <Tags tags={tags} />
         </div>
         <h1>{title}</h1>
         <hr />
@@ -44,11 +47,12 @@ const showUpdatedDate = d1 != d2;
 </GlobalLayout>
 
 <style>
-.date {
-  display: flex;
-  gap: 1em;
-}
-.last-updated-on {
-  color: var(--color-font-muted);
-}
+  .date {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+  }
+  .last-updated-on {
+    color: var(--color-font-muted);
+  }
 </style>
