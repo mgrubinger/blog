@@ -8,6 +8,8 @@ import {
   MASTODON_URL,
   MY_EMAIL,
 } from "../consts";
+import { Image } from 'astro:assets';
+import profilePhoto from '../images/me.jpeg';
 ---
 
 <!doctype html>
@@ -41,16 +43,17 @@ import {
     <Header />
     <main>
       <div class="profile-and-head">
-        <img
+        <!-- <img
           class="profileimage"
           width="140"
           height="140"
           src="https://avatars.githubusercontent.com/u/465547?v=4"
           alt="Portrait of Martin Grubinger"
-        />
+        /> -->
+        <Image class="profileimage" src={profilePhoto} width=140 height=140 alt="Portrait of Martin Grubinger"/>
         <h1>Hi, I'm Martin Grubinger, builder of web-things.</h1>
       </div>
-      <p>Welcome to my website, my blog, my <em>digital garden</em> 🪴.</p>
+      <p>Welcome to my website, my blog, my <em>digital garden</em>&nbsp;🪴.</p>
       <p>
         This is where I write about <a href="/notes">what I've learned</a> and show
         off
@@ -63,17 +66,18 @@ import {
         Currently I am a Lead Front-end Developer at
         <a href="https://geizhals.at/" target="_blank">Geizhals.at</a> (since February
         2020). From 2013–2020 I was a Technology Director at
-        <a href="https://fluxguide.com/">Fluxguide</a> in Vienna. I also tought a
-        course on front-end web development at <a
+        <a href="https://fluxguide.com/" target="_blank">Fluxguide</a> in Vienna.
+        I also tought a course on front-end web development at <a
           href="https://www.fhstp.ac.at/de"
-          >University of Applied Sciences St. Pölten</a
+          target="_blank">University of Applied Sciences St. Pölten</a
         > from 2019–2021.
       </p>
       <p>
         From 2007-2012 I studied Digital Media Technologies at St. Pölten
         University of Applied Sciences. In 2010 I had the amazing opportunity to
         do an internship at Second Story Interactive Studios (now part of <a
-          href="https://www.razorfish.com/">Razorfish</a
+          href="https://www.razorfish.com/"
+          target="_blank">Razorfish</a
         >) in Portland, Oregon. Besides my main job I love working on side
         projects to try out new tools. Some of those you can see in the <a
           href="/projects">projects</a
@@ -95,8 +99,8 @@ import {
       </p>
       <h2>Contact</h2>
       <p>
-        Find me on <a href={MASTODON_URL} rel="noopener me">Mastodon</a> or drop me
-        an email at <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>
+        Find me on <a href={MASTODON_URL} rel="noopener me">Mastodon</a> or drop
+        me an email at <a href={`mailto:${MY_EMAIL}`}>{MY_EMAIL}</a>
       </p>
     </main>
     <Footer />
