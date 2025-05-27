@@ -10,4 +10,4 @@ export const MY_GITHUB = 'https://github.com/grooovinger';
 export const TITLE_POSTFIX = 'grooovinger.com';
 export const AUTHOR = 'Martin Grubinger';
 export const AUTHOR_IMAGE = 'https://avatars.githubusercontent.com/u/465547?v=4';
-export const OG_KIT_KEY = 'TWUP30wW3XR3';
+export const OG_KIT_KEY = 'ma9LjKaa929h';
