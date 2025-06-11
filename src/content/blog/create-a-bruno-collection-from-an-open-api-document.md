@@ -15,6 +15,13 @@ tags:
   - bruno
 ---
 
+_Edit 11.06.2025:_
+
+Bruno now support importing OAS files, at least for OpenAPI v3 files: https://docs.usebruno.com/open-api/importOAS
+
+Consider the rest of this article obsolete, except when you need to import an OAS v2 (swagger) file.
+
+---
 
 [Bruno](https://www.usebruno.com/) does not yet support creating a collection based on an Open API document directly. One way to accomplish that is through an intermediate Postman collection.
 
