@@ -20,7 +20,7 @@ const projects = (await getCollection("projects")).sort(
     {
       projects.map((project) => (
         <li class="project">
-          <a class="project-link" href={`/projects/${project.id}/`}>
+          <a class="project-link" href={`/projects/${project.id}`}>
             {project.data.cover && (
               <Picture
                 class="cover"

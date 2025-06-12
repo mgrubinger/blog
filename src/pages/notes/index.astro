@@ -24,7 +24,7 @@ const notes = (await getCollection("blog")).sort(
               <FormattedDate date={note.data.date} />
               <Tags tags={note.data.tags} />
             </span>
-            <a href={`/notes/${note.id}/`}>
+            <a href={`/notes/${note.id}`}>
               {note.data.cover && (
                 <img width={720} height={360} src={note.data.cover} alt="" />
               )}
