@@ -2,7 +2,7 @@
 short: Using an intermediate Postman collection, we can create a bruno
   collection based on an Open API document
 publishedDate: 2024-07-12T12:13:38Z
-updatedDate: 2024-10-15T11:45:27Z
+updatedDate: 2025-06-11T11:45:27Z
 date: 2024-07-12T12:13:38.000Z
 title: Create a bruno collection from an Open API document
 slug: create-a-bruno-collection-from-an-open-api-document
@@ -15,10 +15,8 @@ tags:
   - bruno
 ---
 
-_Edit 11.06.2025:_
-
-Bruno now support importing OAS files, at least for OpenAPI v3 files: https://docs.usebruno.com/open-api/importOAS
-
+> _edit 11.06.2025_<br>
+Bruno now [supports importing Open API Spec files](https://docs.usebruno.com/open-api/importOAS), at least for Open API v3 files.<br>
 Consider the rest of this article obsolete, except when you need to import an OAS v2 (swagger) file.
 
 ---
