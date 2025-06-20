@@ -24,7 +24,7 @@ tags:
 
 
 
-For my slide show [*Transasia – Mit dem Motorrad von Meidling nach Malaysia*](http://transasia.mgrubinger.at/) I needed an interactive way to visualize the route I traveled through asia. I built this [little web app](https://28771km.grooovinger.com/), where I can control the drawing of my route simply by scrolling.
+For my slide show *Transasia – Mit dem Motorrad von Meidling nach Malaysia* I needed an interactive way to visualize the route I traveled through asia. I built this [little web app](https://28771km.grooovinger.com/), where I can control the drawing of my route simply by scrolling.
 
 The plot: for **one scrolled pixel**, you **travel for one kilometer**. Thus the name ["28771 kilometers"](https://28771km.grooovinger.com/) as this is the total length of the trip.
 
