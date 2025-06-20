@@ -12,7 +12,7 @@ slug: transasia-book
 category: blog
 description: "In spring 2016 I arrived back home from a 6-month+ motorcycle trip
   from Vienna, Austria to Kuala Lumpur, Malaysia (see project [28771
-  Kilometers](https://www.grooovinger.com/projects/28771-kilometers/)). I had a
+  Kilometers](https://grooovinger.com/projects/28771-kilometers/)). I had a
   stack of SD-cards full of photos and a bag full of stories to tell. I decided
   to recompile the stories I wrote for the blog and a selection of the best
   photos into a beautiful book.\r"
@@ -22,7 +22,7 @@ tags:
 
 
 
-In spring 2016 I arrived back home from a 6-month+ motorcycle trip from Vienna, Austria to Kuala Lumpur, Malaysia (see project [28771 Kilometers](https://www.grooovinger.com/projects/28771-kilometers/)). I had a stack of SD-cards full of photos and a bag full of stories to tell. I decided to recompile the stories I wrote for the blog and a selection of the best photos into a beautiful book.
+In spring 2016 I arrived back home from a 6-month+ motorcycle trip from Vienna, Austria to Kuala Lumpur, Malaysia (see project [28771 Kilometers](https://grooovinger.com/projects/28771-kilometers/)). I had a stack of SD-cards full of photos and a bag full of stories to tell. I decided to recompile the stories I wrote for the blog and a selection of the best photos into a beautiful book.
 
 After months of photo editing, writing, layouting and designing I finally printed the book: Transasia – Mit dem Motorrad von Meidling nach Malaysia. I'm pretty happy with the results.
 

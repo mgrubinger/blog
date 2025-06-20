@@ -41,11 +41,10 @@ For storing data as well as authentication, I used Google Firebase. It was quite
 
 The app was hosted on [Netlify](https://netlify.com/), of course.
 
-.png
 ![whatarewegoingtoeattoday01](./images/what-are-we-going-to-eat-today/210010707-22da87ab-95a3-4e6f-8bee-1f2bf9419347.png)
-.png
+
 ![whatarewegoingtoeattoday02](./images/what-are-we-going-to-eat-today/210010709-542c8b01-6ef5-4bdf-9679-1b157884af89.png)
-.png
+
 ![whatarewegoingtoeattoday03](./images/what-are-we-going-to-eat-today/210010712-355e48e2-866e-4b34-83c4-ab9faf9235fd.png)
-.png
+
 ![whatarewegoingtoeattoday04](./images/what-are-we-going-to-eat-today/210010713-c723957b-4a58-43ec-8732-9f6dcfede78c.png)
