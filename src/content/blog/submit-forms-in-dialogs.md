@@ -21,4 +21,4 @@ More details:
 - https://webkit.org/blog/12209/introducing-the-dialog-element/
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#attr-method
 
-I learned about this from [Dominik Reitz ner](https://reitzner.at/) at the [Svelte Vienna Meetup](https://austria.sveltesociety.dev/chapters).
+I learned about this from [Dominik Reitzner](https://reitzner.at/) at the [Svelte Vienna Meetup](https://austria.sveltesociety.dev/chapters).
