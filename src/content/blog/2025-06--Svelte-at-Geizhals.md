@@ -1,7 +1,7 @@
 ---
 short: My talk at the Svelte Vienna meetup on 23rd of June 2025
 publishedDate: Tue Jun 24 2025 12:36:01 GMT+0200 (Central European Summer Time)
-updatedDate: Tue Jun 24 2025 12:36:01 GMT+0200 (Central European Summer Time)
+updatedDate: 2025-07-21 17:50:00
 date: Tue Jun 24 2025 12:36:01 GMT+0200 (Central European Summer Time)
 title: "Talk: Svelte at Geizhals (@ Svelte Vienna)"
 slug: svelte-at-geizhals-talk-svelte-vienna-june-2025
@@ -17,6 +17,8 @@ Yesterday I had the honor to present my talk "Svelte at Geizhals" at the Svelte 
 Here is the link to my slides: [Svelte at Geizhals Slides](/talks/Svelte-at-Geizhals.pdf)
 
 The feedback I received after the talk was very good, and I had a lot of interesting conversations afterwards. I'm happy I could finally contribute back by giving a talk, after visiting the Svelte Vienna meetup many times in the past.
+
+_edit_: You can watch the recording my my talk on youtube: https://www.youtube.com/watch?v=aJVdfPk9WmI
 
 Notes from other talks:
 
