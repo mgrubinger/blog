@@ -70,15 +70,17 @@
       </button>
     {/each}
   </div>
-  <details>
-    <summary>what's this?</summary>
-    <p>
-      This is an implementation of the <a href="https://openheart.fyi/">
-        Open Heart Protocol
-      </a>.<br />
-      Feel free to send a reaction for this page. ☺️
-    </p>
-  </details>
+  <div>
+    <button type="button" class="whats-this-button" popovertarget="whats-this-popover">what's this?</button>
+    <div id="whats-this-popover" popover="hint">
+      <p>
+        This is an implementation of the <a href="https://openheart.fyi/">
+          Open Heart Protocol
+        </a>.<br />
+        Feel free to send a reaction for this page. ☺️
+      </p>
+    </div>
+  </div>
 </div>
 
 <style lang="scss">
@@ -95,7 +97,6 @@
     padding: 10px;
     width: min-content;
     border-radius: 20px;
-
   }
   .button {
     border: 1px solid transparent;
@@ -136,16 +137,24 @@
     font-weight: bold;
   }
 
-  details {
+  .whats-this-button {
+    appearance: none;
+    border: none;
+    background: transparent;
     font-size: var(--font-size-07);
     margin-top: var(--size-1);
     text-align: right;
     font-size: 1rem;
+    color: var(--color-font-muted);
+    cursor: pointer;
+    anchor-name: --my-anchor;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     summary {
       list-style-type: "";
-      cursor: pointer;
-      color: var(--color-font-muted);
 
       &:hover {
         color: var(--accent-dark);
@@ -154,5 +163,12 @@
     p {
       margin: 0;
     }
+  }
+
+  #whats-this-popover {
+    anchor-name: --my-anchor;
+    position: absolute;
+    position-area: bottom left;
+    margin: 0;
   }
 </style>
