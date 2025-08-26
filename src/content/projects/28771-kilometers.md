@@ -9,6 +9,7 @@ link: https://28771km.grooovinger.com/
 short: Travel along as you scroll. 1 pixel = 1 kilometer.
 featured: true
 cover: ./images/28771-kilometers/202228535-b623696f-f124-4dd9-820a-4687aa321dd8.jpg
+coverAlt: Map of the eastern Europe and Asia with a red line zigzagging from Austria to Myanmar.
 publishedDate: 2022-09-18T18:35:43Z
 updatedDate: 2023-03-14T15:32:12Z
 slug: 28771-kilometers

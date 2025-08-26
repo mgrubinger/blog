@@ -7,6 +7,7 @@ type: interactive installation
 short: A semi-digital interactive multi-player game.
 video: https://vimeo.com/43594944
 cover: ./images/superscroll/207104892-985f51eb-7283-47e3-8ed8-367270ff4040.jpg
+coverAlt: Pixelated super hero figure wit a green cape on grey background.
 publishedDate: 2022-12-12T16:51:50Z
 updatedDate: 2022-12-16T16:28:23Z
 title: Superscroll

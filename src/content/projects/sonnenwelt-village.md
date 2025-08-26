@@ -4,6 +4,7 @@ year: "2013"
 short: Populate a village with your energy-efficient house on this multitouch table.
 type: multitouch exhibit
 cover: ./images/sonnenwelt-village/203115771-ed301b4a-17ac-441a-b3b5-5b8a974f2c84.jpg
+coverAlt: Three children in a museum next to a large display on a table. Each kids holds a device in their hands.
 featured: true
 publishedDate: 2022-11-21T17:03:20Z
 updatedDate: 2022-12-13T16:15:33Z

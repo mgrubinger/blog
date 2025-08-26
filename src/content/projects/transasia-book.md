@@ -5,6 +5,7 @@ year: "2017"
 short: A book about my motorcycle trip across Asia.
 type: book
 cover: ./images/transasia-book/202225607-11ec479d-79c4-4144-bea4-831b50b47ebc.jpg
+coverAlt: Open book on wooden table. Book shows a large photograph of a loaded motorbike in front of a white wall with persian letters. Deep blue sky.
 featured: true
 publishedDate: 2022-11-15T16:47:22Z
 updatedDate: 2023-01-10T17:08:48Z

@@ -7,6 +7,7 @@ tasks: idea, development
 tools: svelte, firebase
 link: https://whatarewegoingtoeattoday.grooovinger.com/
 cover: ./images/what-are-we-going-to-eat-today/210010707-22da87ab-95a3-4e6f-8bee-1f2bf9419347.png
+coverAlt: yellow circle on white background. black text reads Shuffle!
 publishedDate: 2022-12-29T21:02:38Z
 updatedDate: 2023-01-10T17:07:25Z
 title: What are we going to eat today?

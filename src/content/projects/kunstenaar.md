@@ -5,6 +5,7 @@ type: interactive installation
 tools: ""
 short: Digital multi-touch guestbook for events
 cover: ./images/kunstenaar/211394537-14be4e49-1aec-4a1e-8692-a271a7fccc64.jpg
+coverAlt: An interactive surface showing a digital color palette and a drawing canvas. Fingers drawing on the canvas.
 publishedDate: 2023-01-09T19:46:22Z
 updatedDate: 2023-01-09T19:46:22Z
 title: Kunstenaar

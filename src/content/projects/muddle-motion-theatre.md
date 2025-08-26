@@ -6,6 +6,7 @@ type: performance
 tools: Projector, old instruments, analogue fx
 video: https://vimeo.com/20463916
 cover: ./images/muddle-motion-theatre/207103692-6eff4ff0-6202-4403-b808-4ac07c01a550.jpg
+coverAlt: Black and white, grainy image of letters reading "Muddle Motion Theatre"
 publishedDate: 2022-12-12T16:46:49Z
 updatedDate: 2022-12-13T16:14:36Z
 title: Muddle Motion Theatre

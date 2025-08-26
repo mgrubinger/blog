@@ -8,6 +8,7 @@ tasks: everything
 tools: Svelte, SvelteKit, Netlify, PWA
 link: https://neolightsout.grooovinger.com/
 cover: ./images/neolightsout/203114081-4b95cae1-d0e5-4619-8222-8935319ec75e.png
+coverAlt: Pink background, a cross-like figure in the foreground constructed from 5 white squares.
 video: https://youtu.be/fUvCqCCmVsg
 publishedDate: 2022-11-21T16:55:28Z
 updatedDate: 2023-01-10T17:04:57Z

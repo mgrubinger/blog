@@ -7,6 +7,7 @@ tools: AS3, OpenExhibits SDK, mySQL
 type: multitouch exhibit
 video: https://www.youtube.com/watch?v=6AjHpB7zY7k
 cover: ./images/playing-valcamonica/203114635-07e6c446-122a-40da-950c-d41fdc6fed73.jpg
+coverAlt: Two people exploring an image of a rock on a large display integrated in a table. The context is a museum, other people in the background.
 publishedDate: 2022-11-21T16:59:06Z
 updatedDate: 2022-12-13T16:15:44Z
 title: Playing Valcamonica

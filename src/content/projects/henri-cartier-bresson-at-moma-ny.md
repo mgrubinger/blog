@@ -6,6 +6,7 @@ tasks: development (front- and backend)
 type: website
 link: https://moma.org/cartierbresson
 cover: ./images/henri-cartier-bresson-at-moma-ny/203113467-47d9d07e-fe5e-470d-ac15-87be610cd6a0.jpg
+coverAlt: Screenshot of a website showing a large black and white photograph. Woman hands fish to a customer on a fish market.
 tools: Symfony, JavascriptMVC
 publishedDate: 2022-11-21T16:52:43Z
 updatedDate: 2022-12-16T16:33:45Z

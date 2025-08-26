@@ -6,6 +6,7 @@ type: multitouch installation
 tasks: concept, design, development
 tools: JavaScript, HTML5, CSS3, CodeIgniter
 cover: ./images/cinema-paradiso-guestbook/203109931-2c9160a6-fcd9-4416-91c9-b9618d0fd0a5.jpg
+coverAlt: An interactive surface showing a digital color palette and a drawing canvas. Fingers drawing on the canvas.
 publishedDate: 2022-11-21T16:38:29Z
 updatedDate: 2022-12-13T16:16:03Z
 title: Cinema Paradiso Guestbook

@@ -5,6 +5,7 @@ type: interactive experience
 tools: Java, JavaScript
 short: Facade installation at the Ars Electronica Center
 cover: ./images/wup-at-ars-electronica/210011273-6efed3b1-bb67-419e-9b19-c1a0450925ab.jpg
+coverAlt: Ars Electronica Center, its facade lights up in green and blue colors.
 publishedDate: 2022-12-29T21:07:06Z
 updatedDate: 2023-03-14T08:06:33Z
 title: WUP at Ars Electronica

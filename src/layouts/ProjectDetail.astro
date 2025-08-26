@@ -9,7 +9,7 @@ import { Picture } from "astro:assets";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, video, tools, link, short, date, updatedDate, cover } =
+const { title, video, tools, link, short, date, updatedDate, cover, coverAlt } =
   Astro.props;
 
 const dateOptions = { month: "numeric", day: "numeric", year: "numeric" };
@@ -21,7 +21,7 @@ const showUpdatedDate = d1 != d2;
 <GlobalLayout title={title} description={short}>
   <article>
     <div class="hero-image">
-      {cover && <Picture src={cover} alt="Cover image" width={1000} />}
+      {cover && <Picture src={cover} alt={coverAlt || "Cover image"} width={1000} />}
     </div>
     <div class="prose">
       <div class="title">

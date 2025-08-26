@@ -5,6 +5,7 @@ short: web app for hand-drawn maps
 type: web app
 link: http://www.christopherthomson.net/index
 cover: ./images/thomsons-projection/210010527-c898c6f8-42c7-41a3-9962-07b88fd35a29.jpg
+coverAlt: Light brown hand-drawn map of a town called Dordole.
 publishedDate: 2022-12-29T20:59:54Z
 updatedDate: 2022-12-29T20:59:54Z
 title: Thomsons Projection

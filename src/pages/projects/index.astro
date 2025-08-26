@@ -25,7 +25,7 @@ const projects = (await getCollection("projects")).sort(
               <Picture
                 class="cover"
                 src={project.data.cover}
-                alt={`${project.data.title} cover image`}
+                alt={project.data.coverAlt || `${project.data.title} cover image`}
                 width={600}
               />
             )}

@@ -6,6 +6,7 @@ type: mobile app
 tasks: Development
 tools: JS, Cordova, PHP, Node, Android, iBeacons
 cover: ./images/kennedy-space-center-visitor-guide/203112733-c946d941-a583-45d1-bc3c-82fbf55f7966.jpg
+coverAlt: Nose of the Atlantis space shuttle as displayed in the Kennedy Space Center in Florida. Next to it, a phone showing an app to discover points of interest.
 publishedDate: 2022-11-21T16:38:27Z
 updatedDate: 2022-12-16T16:37:44Z
 title: Kennedy Space Center Visitor Guide
